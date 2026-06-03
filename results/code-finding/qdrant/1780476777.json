@@ -1,0 +1,17 @@
+{
+  "benchmark": "code-finding",
+  "store": "qdrant",
+  "model": "small",
+  "corpus": "swe-bench-lite",
+  "ndcg_at_10": 0.584945465647791,
+  "recall_at_1": 0.39666666666666667,
+  "recall_at_5": 0.67,
+  "recall_at_10": 0.81,
+  "mrr_at_10": 0.5150674603174603,
+  "latency_p50_ms": 0.381563,
+  "latency_p95_ms": 0.41690835,
+  "latency_p99_ms": 0.5027440799999999,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 300,
+  "num_docs": 215
+}

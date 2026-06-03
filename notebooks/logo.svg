@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="30" viewBox="0 0 130 30">
+  <text x="0" y="18"
+    font-family="'Playfair Display', Georgia, serif"
+    font-size="14"
+    font-weight="700"
+    letter-spacing="-0.2"
+    fill="#1a1917">Agent-Memory</text>
+  <text x="0" y="28"
+    font-family="'Inter', system-ui, sans-serif"
+    font-size="8"
+    font-weight="600"
+    letter-spacing="1.2"
+    fill="#e07b39">BENCHMARKS</text>
+</svg>

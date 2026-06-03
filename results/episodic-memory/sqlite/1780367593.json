@@ -1,0 +1,17 @@
+{
+  "benchmark": "episodic-memory",
+  "store": "sqlite",
+  "model": "small",
+  "corpus": "neon-adrs",
+  "ndcg_at_10": 0.6945076183842546,
+  "recall_at_1": 0.5403949730700179,
+  "recall_at_5": 0.7881508078994613,
+  "recall_at_10": 0.8527827648114902,
+  "mrr_at_10": 0.6440205465788948,
+  "latency_p50_ms": 0.29522950000000003,
+  "latency_p95_ms": 5.00976635,
+  "latency_p99_ms": 7.061307499999975,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 1114,
+  "num_docs": 1115
+}

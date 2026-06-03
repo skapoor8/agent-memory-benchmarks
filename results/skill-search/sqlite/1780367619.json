@@ -1,0 +1,17 @@
+{
+  "benchmark": "skill-search",
+  "store": "sqlite",
+  "model": "small",
+  "corpus": "gorilla-apibench",
+  "ndcg_at_10": 0.7493139936799241,
+  "recall_at_1": 0.6,
+  "recall_at_5": 0.8666666666666667,
+  "recall_at_10": 0.9,
+  "mrr_at_10": 0.7,
+  "latency_p50_ms": 0.20379150000000001,
+  "latency_p95_ms": 0.25025014999999995,
+  "latency_p99_ms": 0.25799161000000004,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 30,
+  "num_docs": 30
+}

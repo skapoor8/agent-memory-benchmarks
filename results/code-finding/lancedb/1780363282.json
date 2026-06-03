@@ -1,0 +1,17 @@
+{
+  "benchmark": "code-finding",
+  "store": "lancedb",
+  "model": "small",
+  "corpus": "swe-bench-lite",
+  "ndcg_at_10": 0.622732416148806,
+  "recall_at_1": 0.42333333333333334,
+  "recall_at_5": 0.75,
+  "recall_at_10": 0.83,
+  "mrr_at_10": 0.5563809523809524,
+  "latency_p50_ms": 3.119708,
+  "latency_p95_ms": 3.9771146000000006,
+  "latency_p99_ms": 4.689157499999999,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 300,
+  "num_docs": 215
+}

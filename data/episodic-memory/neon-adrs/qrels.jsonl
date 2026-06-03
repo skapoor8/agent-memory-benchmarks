@@ -1,0 +1,1114 @@
+{"query_id": "q_d27a71535ec77d4c", "query": "Authentication", "relevant": ["d27a71535ec77d4c"]}
+{"query_id": "q_a263d03e4b04eb78", "query": "Overview", "relevant": ["a263d03e4b04eb78"]}
+{"query_id": "q_633381d9b239ae98", "query": "Best practices", "relevant": ["633381d9b239ae98"]}
+{"query_id": "q_33d6b86d669d11ae", "query": "Token format", "relevant": ["33d6b86d669d11ae"]}
+{"query_id": "q_4f9be91266474114", "query": "CLI", "relevant": ["4f9be91266474114"]}
+{"query_id": "q_6963faf28559d76f", "query": "Compute", "relevant": ["6963faf28559d76f"]}
+{"query_id": "q_5060926f7ce26e1d", "query": "Pageserver", "relevant": ["5060926f7ce26e1d"]}
+{"query_id": "q_6462c51969b952bc", "query": "Safekeeper", "relevant": ["6462c51969b952bc"]}
+{"query_id": "q_c5e7b88cf73d4005", "query": "In the source code", "relevant": ["c5e7b88cf73d4005"]}
+{"query_id": "q_c90af1a606e06810", "query": "Pageserver", "relevant": ["c90af1a606e06810"]}
+{"query_id": "q_64812ac7fd2b52ce", "query": "Config example", "relevant": ["64812ac7fd2b52ce"]}
+{"query_id": "q_f8b410b59995488c", "query": "Initial configuration file created by 'pageserver --init'", "relevant": ["f8b410b59995488c"]}
+{"query_id": "q_96c92448d7f8f313", "query": "initial superuser role name to use when creating a new tenant", "relevant": ["96c92448d7f8f313"]}
+{"query_id": "q_cfb8803401b20e58", "query": "[remote_storage]", "relevant": ["cfb8803401b20e58"]}
+{"query_id": "q_907cc3adf3742b41", "query": "Config values All values can be passed as an argument to the pageserver binary, using the `-c` parameter and specifi", "relevant": ["907cc3adf3742b41"]}
+{"query_id": "q_920a89ad55131741", "query": "to the different one. #### initial_superuser_name Name of the initial superuser role, passed to initdb when a new tenant", "relevant": ["920a89ad55131741"]}
+{"query_id": "q_a3f3ac48ecf85ab2", "query": "Name of the bucket to connect to", "relevant": ["a3f3ac48ecf85ab2"]}
+{"query_id": "q_2087f5aa0fcd7671", "query": "Name of the region where the bucket is located at", "relevant": ["2087f5aa0fcd7671"]}
+{"query_id": "q_f9b023e4167838ac", "query": "A \"subfolder\" in the bucket, to use the same bucket separately by multiple pageservers at once.", "relevant": ["f9b023e4167838ac"]}
+{"query_id": "q_aa9832ba7b2a76e1", "query": "Optional, pageserver uses entire bucket if the prefix is not specified.", "relevant": ["aa9832ba7b2a76e1"]}
+{"query_id": "q_31a1936aa7e0ab53", "query": "S3 API query limit to avoid getting errors/throttling from AWS.", "relevant": ["31a1936aa7e0ab53"]}
+{"query_id": "q_6ff281311024209c", "query": "Max number of concurrent timeline synchronized (layers uploaded or downloaded) with the remote storage at the same tim", "relevant": ["6ff281311024209c"]}
+{"query_id": "q_3e536f0718b22084", "query": "Max number of errors a single task can have before it's considered failed and not attempted to run anymore.", "relevant": ["3e536f0718b22084"]}
+{"query_id": "q_154b896dd10272fe", "query": "safekeeper", "relevant": ["154b896dd10272fe"]}
+{"query_id": "q_3f68abfdf5016f99", "query": "Storage broker", "relevant": ["3f68abfdf5016f99"]}
+{"query_id": "q_6ec956c51360ec39", "query": "Updating Postgres", "relevant": ["6ec956c51360ec39"]}
+{"query_id": "q_fe676bb5d1ba972c", "query": "Minor Versions", "relevant": ["fe676bb5d1ba972c"]}
+{"query_id": "q_b0c1e44d8eb27001", "query": "Synthetic size", "relevant": ["b0c1e44d8eb27001"]}
+{"query_id": "q_de4faa11f66a60c5", "query": "Terms & assumptions", "relevant": ["de4faa11f66a60c5"]}
+{"query_id": "q_bcb22936c5f2f45c", "query": "Calculation", "relevant": ["bcb22936c5f2f45c"]}
+{"query_id": "q_4724046e5f7b96db", "query": "Example: Data is INSERTed", "relevant": ["4724046e5f7b96db"]}
+{"query_id": "q_d077d624980d5ef9", "query": "Example: Data is DELETEd", "relevant": ["d077d624980d5ef9"]}
+{"query_id": "q_47bd5a03fe6bdd7b", "query": "Branching", "relevant": ["47bd5a03fe6bdd7b"]}
+{"query_id": "q_56e7be6fc8305f33", "query": "Example: branch and INSERT", "relevant": ["56e7be6fc8305f33"]}
+{"query_id": "q_c1b24e1a79fb80cd", "query": "Diverging branches", "relevant": ["c1b24e1a79fb80cd"]}
+{"query_id": "q_d3c821e41d427b2e", "query": "Example: diverging branches", "relevant": ["d3c821e41d427b2e"]}
+{"query_id": "q_ad5bce8d93e01c48", "query": "What is the size of an individual branch?", "relevant": ["ad5bce8d93e01c48"]}
+{"query_id": "q_b92a627e37d364ac", "query": "Example: attributing size to branches", "relevant": ["b92a627e37d364ac"]}
+{"query_id": "q_89ff470535f1537e", "query": "Subtraction method", "relevant": ["89ff470535f1537e"]}
+{"query_id": "q_61cab6e11e1268aa", "query": "Division method", "relevant": ["61cab6e11e1268aa"]}
+{"query_id": "q_bebc47eedf29604b", "query": "Addition method", "relevant": ["bebc47eedf29604b"]}
+{"query_id": "q_9c5d71b4166cf366", "query": "Alternatives", "relevant": ["9c5d71b4166cf366"]}
+{"query_id": "q_88f8412acfa726ed", "query": "Which is the right method?", "relevant": ["88f8412acfa726ed"]}
+{"query_id": "q_a936b67b7cdc4447", "query": "Multitenancy", "relevant": ["a936b67b7cdc4447"]}
+{"query_id": "q_383a3de758aaf721", "query": "Overview", "relevant": ["383a3de758aaf721"]}
+{"query_id": "q_8e65ab138c21c3ca", "query": "Tenants in other commands", "relevant": ["8e65ab138c21c3ca"]}
+{"query_id": "q_281bee0c3ed3a2fe", "query": "Data layout", "relevant": ["281bee0c3ed3a2fe"]}
+{"query_id": "q_a0f1622b1b7896db", "query": "Changes to postgres", "relevant": ["a0f1622b1b7896db"]}
+{"query_id": "q_a2e02b824f261c87", "query": "Safety", "relevant": ["a2e02b824f261c87"]}
+{"query_id": "q_ab0e9e294bf81c9d", "query": "Summary", "relevant": ["ab0e9e294bf81c9d"]}
+{"query_id": "q_703595937e0dc8fa", "query": "Looking for `neon.tech` docs?", "relevant": ["703595937e0dc8fa"]}
+{"query_id": "q_d4cbfaf1b4d07753", "query": "Architecture", "relevant": ["d4cbfaf1b4d07753"]}
+{"query_id": "q_23638ae8d257a441", "query": "Uncategorized", "relevant": ["23638ae8d257a441"]}
+{"query_id": "q_d27f0156b4e74bc2", "query": "RFCs", "relevant": ["d27f0156b4e74bc2"]}
+{"query_id": "q_b7bc2c853dc7b332", "query": "Glossary", "relevant": ["b7bc2c853dc7b332"]}
+{"query_id": "q_39aacca175cc09f6", "query": "Authentication", "relevant": ["39aacca175cc09f6"]}
+{"query_id": "q_a39e1bd2e4e53c92", "query": "Backpressure", "relevant": ["a39e1bd2e4e53c92"]}
+{"query_id": "q_376a0abdc56b8331", "query": "Base image (page image)", "relevant": ["376a0abdc56b8331"]}
+{"query_id": "q_a3999baee7b9c84c", "query": "Basebackup", "relevant": ["a3999baee7b9c84c"]}
+{"query_id": "q_195fed3d1b3f940d", "query": "Branch", "relevant": ["195fed3d1b3f940d"]}
+{"query_id": "q_e9bbbf7b54bb1b20", "query": "Checkpoint (PostgreSQL)", "relevant": ["e9bbbf7b54bb1b20"]}
+{"query_id": "q_7b57d68b0b858802", "query": "Checkpoint (Layered repository)", "relevant": ["7b57d68b0b858802"]}
+{"query_id": "q_b0a7dd957995b54c", "query": "Compaction", "relevant": ["b0a7dd957995b54c"]}
+{"query_id": "q_ce4ea668c9426be1", "query": "Compute node", "relevant": ["ce4ea668c9426be1"]}
+{"query_id": "q_3a229df992048186", "query": "Garbage collection", "relevant": ["3a229df992048186"]}
+{"query_id": "q_f3a825f47fe5138d", "query": "Fork", "relevant": ["f3a825f47fe5138d"]}
+{"query_id": "q_6319d7b6cada3d26", "query": "Layer", "relevant": ["6319d7b6cada3d26"]}
+{"query_id": "q_b40d45a70b17d17c", "query": "Layer file (on-disk layer)", "relevant": ["b40d45a70b17d17c"]}
+{"query_id": "q_9bae38fe42722b05", "query": "Layer map", "relevant": ["9bae38fe42722b05"]}
+{"query_id": "q_4b4cdd396019a944", "query": "Layered repository", "relevant": ["4b4cdd396019a944"]}
+{"query_id": "q_9f2277c61facf9b2", "query": "LSN", "relevant": ["9f2277c61facf9b2"]}
+{"query_id": "q_c54aa2c679828685", "query": "Logical size", "relevant": ["c54aa2c679828685"]}
+{"query_id": "q_75123ef1ef784901", "query": "Page (block)", "relevant": ["75123ef1ef784901"]}
+{"query_id": "q_e60080acb24295c9", "query": "Pageserver", "relevant": ["e60080acb24295c9"]}
+{"query_id": "q_a6bb3d00996f363d", "query": "Page service", "relevant": ["a6bb3d00996f363d"]}
+{"query_id": "q_6cb198782a33dd0c", "query": "PITR (Point-in-time-recovery)", "relevant": ["6cb198782a33dd0c"]}
+{"query_id": "q_c814b114ea6e660e", "query": "Primary node", "relevant": ["c814b114ea6e660e"]}
+{"query_id": "q_07a46592c09fb3ca", "query": "Proxy", "relevant": ["07a46592c09fb3ca"]}
+{"query_id": "q_e42566077b150301", "query": "Relation", "relevant": ["e42566077b150301"]}
+{"query_id": "q_bafaba8de5b2a57f", "query": "Replication slot", "relevant": ["bafaba8de5b2a57f"]}
+{"query_id": "q_ea9cc6a0d4961b2c", "query": "Replica node", "relevant": ["ea9cc6a0d4961b2c"]}
+{"query_id": "q_2d5ec1ee58d097a1", "query": "Repository", "relevant": ["2d5ec1ee58d097a1"]}
+{"query_id": "q_a2db52ce6d149f72", "query": "Retention policy", "relevant": ["a2db52ce6d149f72"]}
+{"query_id": "q_0e479d9ff66ecabb", "query": "Segment", "relevant": ["0e479d9ff66ecabb"]}
+{"query_id": "q_6c4141537207770d", "query": "SLRU", "relevant": ["6c4141537207770d"]}
+{"query_id": "q_2108d240913b2cea", "query": "Tenant (Multitenancy)", "relevant": ["2108d240913b2cea"]}
+{"query_id": "q_3cc3abd89be75ab3", "query": "Timeline", "relevant": ["3cc3abd89be75ab3"]}
+{"query_id": "q_ea8869abf3cb7a82", "query": "XLOG", "relevant": ["ea8869abf3cb7a82"]}
+{"query_id": "q_3efa40f7ad187fc8", "query": "WAL (Write-ahead log)", "relevant": ["3efa40f7ad187fc8"]}
+{"query_id": "q_2616fa41506489f9", "query": "WAL acceptor, WAL proposer", "relevant": ["2616fa41506489f9"]}
+{"query_id": "q_4736da7812654fd3", "query": "WAL receiver (WAL decoder)", "relevant": ["4736da7812654fd3"]}
+{"query_id": "q_a31278579e444864", "query": "WAL record", "relevant": ["a31278579e444864"]}
+{"query_id": "q_3a19a2cccbff71b4", "query": "WAL redo", "relevant": ["3a19a2cccbff71b4"]}
+{"query_id": "q_c1f7b149600dea4d", "query": "WAL safekeeper", "relevant": ["c1f7b149600dea4d"]}
+{"query_id": "q_b021441c08764676", "query": "WAL segment (WAL file)", "relevant": ["b021441c08764676"]}
+{"query_id": "q_d4c3c58703f7c4ea", "query": "WAL service", "relevant": ["d4c3c58703f7c4ea"]}
+{"query_id": "q_8c14bc1f1d784f51", "query": "Web console", "relevant": ["8c14bc1f1d784f51"]}
+{"query_id": "q_30b5761567b7ea01", "query": "WAL Redo", "relevant": ["30b5761567b7ea01"]}
+{"query_id": "q_639b757fcf93a7c2", "query": "Multi-tenant security", "relevant": ["639b757fcf93a7c2"]}
+{"query_id": "q_99ee53e391dc7f61", "query": "WAL-redo process communication", "relevant": ["99ee53e391dc7f61"]}
+{"query_id": "q_efdff861bc5685c0", "query": "Special handling of some records", "relevant": ["efdff861bc5685c0"]}
+{"query_id": "q_beb1db49004d4381", "query": "Records that modify multiple pages", "relevant": ["beb1db49004d4381"]}
+{"query_id": "q_ec313a280fd1abf8", "query": "WAL service", "relevant": ["ec313a280fd1abf8"]}
+{"query_id": "q_9ca9a749da1f1402", "query": "Q&A", "relevant": ["9ca9a749da1f1402"]}
+{"query_id": "q_c6d6a73811b52119", "query": "Terminology", "relevant": ["c6d6a73811b52119"]}
+{"query_id": "q_637a1436a464f571", "query": "WAL proposer-safekeeper communication consensus protocol.", "relevant": ["637a1436a464f571"]}
+{"query_id": "q_c64fd9e69363a0f3", "query": "General requirements and architecture", "relevant": ["c64fd9e69363a0f3"]}
+{"query_id": "q_64d2247bfc797ef3", "query": "Handshake", "relevant": ["64d2247bfc797ef3"]}
+{"query_id": "q_f5ae566cb371f823", "query": "Recovery", "relevant": ["f5ae566cb371f823"]}
+{"query_id": "q_07f2729e20d342ca", "query": "S3(1): R1(a),R2(b),R3(e),R4(d) ``` Epoch of S3 will be adjusted once it overwrites R4: ``` S1(3): R1(a),R2(b),R3(e),R4(f", "relevant": ["07f2729e20d342ca"]}
+{"query_id": "q_ade221043b6673bd", "query": "Main loop", "relevant": ["ade221043b6673bd"]}
+{"query_id": "q_f8d0845da04a4627", "query": "Fault tolerance", "relevant": ["f8d0845da04a4627"]}
+{"query_id": "q_c9c4bcf92ae91a79", "query": "Limitations", "relevant": ["c9c4bcf92ae91a79"]}
+{"query_id": "q_50f8fb1c61c3a5ce", "query": "Glossary", "relevant": ["50f8fb1c61c3a5ce"]}
+{"query_id": "q_99a76022797f7274", "query": "Algorithm", "relevant": ["99a76022797f7274"]}
+{"query_id": "q_cda02cea0abc9346", "query": "Separation of Compute and Storage", "relevant": ["cda02cea0abc9346"]}
+{"query_id": "q_fd0726f21edf8393", "query": "Page Service", "relevant": ["fd0726f21edf8393"]}
+{"query_id": "q_815d3b5b7678ff69", "query": "Page cache", "relevant": ["815d3b5b7678ff69"]}
+{"query_id": "q_aba70ef4c50adde5", "query": "Pageserver Compaction", "relevant": ["aba70ef4c50adde5"]}
+{"query_id": "q_10dd2ce485ad3da9", "query": "Pages and WAL", "relevant": ["10dd2ce485ad3da9"]}
+{"query_id": "q_0d7fc8de75d64643", "query": "Compaction: Why?", "relevant": ["0d7fc8de75d64643"]}
+{"query_id": "q_d74f057521a67e6e", "query": "Compaction: How?", "relevant": ["d74f057521a67e6e"]}
+{"query_id": "q_e61890fa96a9dc66", "query": "Compaction: When?", "relevant": ["e61890fa96a9dc66"]}
+{"query_id": "q_65d07aa8cbb5c5c1", "query": "Backpressure", "relevant": ["65d07aa8cbb5c5c1"]}
+{"query_id": "q_fc0d9b3a16505ce3", "query": "Circuit Breaker", "relevant": ["fc0d9b3a16505ce3"]}
+{"query_id": "q_891af7f3c523be05", "query": "Overview", "relevant": ["891af7f3c523be05"]}
+{"query_id": "q_708b1742421e273e", "query": "Pageserver metrics", "relevant": ["708b1742421e273e"]}
+{"query_id": "q_d56236f7a074ecd3", "query": "Proxy consumption metrics", "relevant": ["d56236f7a074ecd3"]}
+{"query_id": "q_cfd46a9cafd48c40", "query": "TODO", "relevant": ["cfd46a9cafd48c40"]}
+{"query_id": "q_6bfabd0b8d4d5a4b", "query": "Pageserver tenant migration", "relevant": ["6bfabd0b8d4d5a4b"]}
+{"query_id": "q_3763fae689eee52a", "query": "Overview", "relevant": ["3763fae689eee52a"]}
+{"query_id": "q_4a303922dd9d32c7", "query": "Migration process", "relevant": ["4a303922dd9d32c7"]}
+{"query_id": "q_fde2691bb1b0910a", "query": "Implementation details", "relevant": ["fde2691bb1b0910a"]}
+{"query_id": "q_3c4edb839a5eb365", "query": "Storage Controller", "relevant": ["3c4edb839a5eb365"]}
+{"query_id": "q_686e5a924488609a", "query": "Concepts", "relevant": ["686e5a924488609a"]}
+{"query_id": "q_6ef14189d1d457d8", "query": "APIs", "relevant": ["6ef14189d1d457d8"]}
+{"query_id": "q_375c9bf6cd55218f", "query": "Database", "relevant": ["375c9bf6cd55218f"]}
+{"query_id": "q_84d78c7f60f21faf", "query": "Diesel tip: migrations", "relevant": ["84d78c7f60f21faf"]}
+{"query_id": "q_71418aeea1fe8b5d", "query": "storcon_cli", "relevant": ["71418aeea1fe8b5d"]}
+{"query_id": "q_ab104628f51d0029", "query": "Deploying", "relevant": ["ab104628f51d0029"]}
+{"query_id": "q_ffe049000845a205", "query": "Database", "relevant": ["ffe049000845a205"]}
+{"query_id": "q_e513a0b7bcc3ae73", "query": "Configure pageservers to use the storage controller", "relevant": ["e513a0b7bcc3ae73"]}
+{"query_id": "q_a7be7f8e18d4c595", "query": "Example `metadata.json`", "relevant": ["a7be7f8e18d4c595"]}
+{"query_id": "q_48825d43ded622e3", "query": "Handle compute notifications.", "relevant": ["48825d43ded622e3"]}
+{"query_id": "q_cebb0a16269e4bfa", "query": "`notify-attach` body", "relevant": ["cebb0a16269e4bfa"]}
+{"query_id": "q_8b3333e0cb7bf0c6", "query": "`notify-safekeepers` body", "relevant": ["8b3333e0cb7bf0c6"]}
+{"query_id": "q_41ac7528865e918a", "query": "Thread management", "relevant": ["41ac7528865e918a"]}
+{"query_id": "q_cd79a13e061c98ae", "query": "Handling shutdown", "relevant": ["cd79a13e061c98ae"]}
+{"query_id": "q_2c311f22759d1ab2", "query": "Async cancellation safety In async Rust, futures can be \"cancelled\" at any await point, by", "relevant": ["2c311f22759d1ab2"]}
+{"query_id": "q_68e62c4828d556ac", "query": "For example, consider the following code: ``` while let Some(i) = work_inbox.recv().await { if let Err(_) = results_outb", "relevant": ["68e62c4828d556ac"]}
+{"query_id": "q_2ea0808238d99f86", "query": "Source tree layout", "relevant": ["2ea0808238d99f86"]}
+{"query_id": "q_d752f781220c9c35", "query": "Adding dependencies", "relevant": ["d752f781220c9c35"]}
+{"query_id": "q_729fbbc23d084259", "query": "Checking Rust 3rd-parties", "relevant": ["729fbbc23d084259"]}
+{"query_id": "q_a93ddb6340bcd930", "query": "Using Python", "relevant": ["a93ddb6340bcd930"]}
+{"query_id": "q_2b9400271bb5afee", "query": "Prerequisites", "relevant": ["2b9400271bb5afee"]}
+{"query_id": "q_5ef00dadb1a42a00", "query": "Obligatory checks", "relevant": ["5ef00dadb1a42a00"]}
+{"query_id": "q_736bf60376167070", "query": "Changing dependencies", "relevant": ["736bf60376167070"]}
+{"query_id": "q_48acb4ed7d18aa39", "query": "Configuring IDEs", "relevant": ["48acb4ed7d18aa39"]}
+{"query_id": "q_8a169728b599e89a", "query": "CLion", "relevant": ["8a169728b599e89a"]}
+{"query_id": "q_3bd6bdca919e54b1", "query": "tab character\" on the \"Tabs and Indents\" tab. Ensure that \"Tab size\" is 4. You can also enable Cargo Clippy diagnostics", "relevant": ["3bd6bdca919e54b1"]}
+{"query_id": "q_68e360e302736f08", "query": "Services", "relevant": ["68e360e302736f08"]}
+{"query_id": "q_dcf25870a05b1660", "query": "Page Service", "relevant": ["dcf25870a05b1660"]}
+{"query_id": "q_2bc6a684243a8ca7", "query": "WAL Receiver", "relevant": ["2bc6a684243a8ca7"]}
+{"query_id": "q_d4175b78260c2e9f", "query": "Backup service", "relevant": ["d4175b78260c2e9f"]}
+{"query_id": "q_569209a5f7142bb4", "query": "Repository background tasks", "relevant": ["569209a5f7142bb4"]}
+{"query_id": "q_aa968e6e54d9612d", "query": "Checkpointing", "relevant": ["aa968e6e54d9612d"]}
+{"query_id": "q_6030c272495ef6c3", "query": "Garbage collection", "relevant": ["6030c272495ef6c3"]}
+{"query_id": "q_addbd58fcdb87de2", "query": "Error handling and logging", "relevant": ["addbd58fcdb87de2"]}
+{"query_id": "q_1f0991b5df3f635b", "query": "Logging errors", "relevant": ["1f0991b5df3f635b"]}
+{"query_id": "q_7de746206d162e88", "query": "Error types", "relevant": ["7de746206d162e88"]}
+{"query_id": "q_da95efa4669b8bd2", "query": "Panics", "relevant": ["da95efa4669b8bd2"]}
+{"query_id": "q_fbd25d5f50fcf3af", "query": "Error levels", "relevant": ["fbd25d5f50fcf3af"]}
+{"query_id": "q_6fb2feb79caf8af6", "query": "Error", "relevant": ["6fb2feb79caf8af6"]}
+{"query_id": "q_43b594542cb45814", "query": "Warn", "relevant": ["43b594542cb45814"]}
+{"query_id": "q_0662b461d186e83e", "query": "Info", "relevant": ["0662b461d186e83e"]}
+{"query_id": "q_d743e517a76ba332", "query": "Debug & Trace", "relevant": ["d743e517a76ba332"]}
+{"query_id": "q_09577604dd07c34d", "query": "Context", "relevant": ["09577604dd07c34d"]}
+{"query_id": "q_093413a3cd578f90", "query": "Error message style", "relevant": ["093413a3cd578f90"]}
+{"query_id": "q_0181df1fd616aafa", "query": "PostgreSQL extensions", "relevant": ["0181df1fd616aafa"]}
+{"query_id": "q_c38e4a40cf6c866f", "query": "Neon Rust code", "relevant": ["c38e4a40cf6c866f"]}
+{"query_id": "q_766e03306544637d", "query": "Postgres core changes", "relevant": ["766e03306544637d"]}
+{"query_id": "q_35bde66c01aa86b3", "query": "Changes for Compute node", "relevant": ["35bde66c01aa86b3"]}
+{"query_id": "q_b58fdc5a539d6771", "query": "Prefetching", "relevant": ["b58fdc5a539d6771"]}
+{"query_id": "q_2f894574dd321b24", "query": "How to get rid of the patch", "relevant": ["2f894574dd321b24"]}
+{"query_id": "q_41cbe20a0e75e739", "query": "Add t_cid to heap WAL records", "relevant": ["41cbe20a0e75e739"]}
+{"query_id": "q_c37032e1d841fa21", "query": "Problem we're trying to solve", "relevant": ["c37032e1d841fa21"]}
+{"query_id": "q_4186e8f681f2b461", "query": "How to get rid of the patch", "relevant": ["4186e8f681f2b461"]}
+{"query_id": "q_5f102c8ce8d37a7d", "query": "Alternatives", "relevant": ["5f102c8ce8d37a7d"]}
+{"query_id": "q_e6c417f0372021b5", "query": "Mark index builds that use buffer manager without logging explicitly", "relevant": ["e6c417f0372021b5"]}
+{"query_id": "q_26ffb1c95d1598be", "query": "How to get rid of the patch", "relevant": ["26ffb1c95d1598be"]}
+{"query_id": "q_871064489f1a62e0", "query": "Track last-written page LSN", "relevant": ["871064489f1a62e0"]}
+{"query_id": "q_1d1ac781b2204c3c", "query": "How to get rid of the patch", "relevant": ["1d1ac781b2204c3c"]}
+{"query_id": "q_c3041e1491034af6", "query": "Allow startup without reading checkpoint record", "relevant": ["c3041e1491034af6"]}
+{"query_id": "q_59d79804cf23d867", "query": "How to get rid of the patch", "relevant": ["59d79804cf23d867"]}
+{"query_id": "q_1a4b53ee7424c5a6", "query": "Alternatives", "relevant": ["1a4b53ee7424c5a6"]}
+{"query_id": "q_3179e585b1de9f3a", "query": "Disable sequence caching", "relevant": ["3179e585b1de9f3a"]}
+{"query_id": "q_6f487db86ba05766", "query": "How to get rid of the patch", "relevant": ["6f487db86ba05766"]}
+{"query_id": "q_ce26800fac5a1890", "query": "Make smgr interface available to extensions", "relevant": ["ce26800fac5a1890"]}
+{"query_id": "q_e4f4d97600afc28c", "query": "How to get rid of the patch", "relevant": ["e4f4d97600afc28c"]}
+{"query_id": "q_e09dd681d815bc75", "query": "Added relpersistence argument to smgropen()", "relevant": ["e09dd681d815bc75"]}
+{"query_id": "q_005838f41591aa73", "query": "How to get rid of the patch", "relevant": ["005838f41591aa73"]}
+{"query_id": "q_5208ca624b9317e5", "query": "Alternatives", "relevant": ["5208ca624b9317e5"]}
+{"query_id": "q_3da3a42f36689884", "query": "Use smgr and dbsize_hook for size calculations", "relevant": ["3da3a42f36689884"]}
+{"query_id": "q_f21b6af3eec3dbc2", "query": "How to get rid of the patch", "relevant": ["f21b6af3eec3dbc2"]}
+{"query_id": "q_526af66c9ebb40c2", "query": "WAL redo process changes", "relevant": ["526af66c9ebb40c2"]}
+{"query_id": "q_bf180480f2d4e0cf", "query": "Don't replay change in XLogReadBufferForRedo that are not for the target page we're replaying", "relevant": ["bf180480f2d4e0cf"]}
+{"query_id": "q_e5d5089e310f970d", "query": "Problem we're trying to solve", "relevant": ["e5d5089e310f970d"]}
+{"query_id": "q_f9b1d46d104ed233", "query": "How to get rid of the patch", "relevant": ["f9b1d46d104ed233"]}
+{"query_id": "q_4327bcd8fd592edb", "query": "Alternatives", "relevant": ["4327bcd8fd592edb"]}
+{"query_id": "q_d74bf45f7e72766f", "query": "Add predefined_sysidentifier flag to initdb", "relevant": ["d74bf45f7e72766f"]}
+{"query_id": "q_e98cf5842213edf0", "query": "How to get rid of the patch", "relevant": ["e98cf5842213edf0"]}
+{"query_id": "q_6095704c18e8cfe9", "query": "pg_waldump flags to ignore errors", "relevant": ["6095704c18e8cfe9"]}
+{"query_id": "q_94364ac7639136b0", "query": "How to get rid of the patch", "relevant": ["94364ac7639136b0"]}
+{"query_id": "q_32f655f970da30e8", "query": "Backpressure if pageserver doesn't ingest WAL fast enough", "relevant": ["32f655f970da30e8"]}
+{"query_id": "q_d929f421de238cd9", "query": "How to get rid of the patch", "relevant": ["d929f421de238cd9"]}
+{"query_id": "q_b040f0d30dbbcb9d", "query": "SLRU on-demand download", "relevant": ["b040f0d30dbbcb9d"]}
+{"query_id": "q_968a968c14446401", "query": "Problem we're trying to solve", "relevant": ["968a968c14446401"]}
+{"query_id": "q_da3287ec2d51003b", "query": "Alternatives", "relevant": ["da3287ec2d51003b"]}
+{"query_id": "q_d77c3bb6561256b4", "query": "WAL-log an all-zeros page as one large hole", "relevant": ["d77c3bb6561256b4"]}
+{"query_id": "q_df8e7b58282901bb", "query": "Problem we're trying to solve", "relevant": ["df8e7b58282901bb"]}
+{"query_id": "q_cacf5fa45ec71dfb", "query": "How to get rid of the patch", "relevant": ["cacf5fa45ec71dfb"]}
+{"query_id": "q_b7c5a3140351c421", "query": "Shut down walproposer after checkpointer", "relevant": ["b7c5a3140351c421"]}
+{"query_id": "q_081ae8816a7f9743", "query": "How to get rid of the patch", "relevant": ["081ae8816a7f9743"]}
+{"query_id": "q_26595e0a118788ef", "query": "EXPLAIN changes for prefetch and LFC", "relevant": ["26595e0a118788ef"]}
+{"query_id": "q_53841082282c41a9", "query": "How to get rid of the patch", "relevant": ["53841082282c41a9"]}
+{"query_id": "q_563d9aef7d258389", "query": "On-demand download of extensions", "relevant": ["563d9aef7d258389"]}
+{"query_id": "q_e6b2c3b6f4672299", "query": "How to get rid of the patch", "relevant": ["e6b2c3b6f4672299"]}
+{"query_id": "q_a93a15577758ae00", "query": "Publication superuser checks", "relevant": ["a93a15577758ae00"]}
+{"query_id": "q_a4e758bc6261381f", "query": "How to get rid of the patch", "relevant": ["a4e758bc6261381f"]}
+{"query_id": "q_0c866a04d4d73976", "query": "WAL log replication slots", "relevant": ["0c866a04d4d73976"]}
+{"query_id": "q_07b90b4c57aafadc", "query": "How to get rid of the patch", "relevant": ["07b90b4c57aafadc"]}
+{"query_id": "q_f942f02ed170e733", "query": "WAL-log replication snapshots", "relevant": ["f942f02ed170e733"]}
+{"query_id": "q_3b3f8c83fcfc873b", "query": "How to get rid of the patch", "relevant": ["3b3f8c83fcfc873b"]}
+{"query_id": "q_8d499c7bcf7c801f", "query": "WAL-log relmapper files", "relevant": ["8d499c7bcf7c801f"]}
+{"query_id": "q_bb701795873c8db4", "query": "How to get rid of the patch", "relevant": ["bb701795873c8db4"]}
+{"query_id": "q_f8fad9e3d26aa510", "query": "XLogWaitForReplayOf()", "relevant": ["f8fad9e3d26aa510"]}
+{"query_id": "q_357430912a44d8b6", "query": "Not currently committed but proposed", "relevant": ["357430912a44d8b6"]}
+{"query_id": "q_0a065652231e9cff", "query": "Disable ring buffer buffer manager strategies", "relevant": ["0a065652231e9cff"]}
+{"query_id": "q_a830d461afae676e", "query": "Why?", "relevant": ["a830d461afae676e"]}
+{"query_id": "q_bf078e87e9c7bcbc", "query": "Alternatives?", "relevant": ["bf078e87e9c7bcbc"]}
+{"query_id": "q_cd6e9b3e763947f8", "query": "Disable marking page as dirty when hint bits are set.", "relevant": ["cd6e9b3e763947f8"]}
+{"query_id": "q_abef240f5948c6bc", "query": "Why?", "relevant": ["abef240f5948c6bc"]}
+{"query_id": "q_07f9b3db7eaeac59", "query": "Alternatives?", "relevant": ["07f9b3db7eaeac59"]}
+{"query_id": "q_0915e04d792f058e", "query": "Prewarming", "relevant": ["0915e04d792f058e"]}
+{"query_id": "q_741a9e841814e6e8", "query": "Why?", "relevant": ["741a9e841814e6e8"]}
+{"query_id": "q_7f0ea89442504af9", "query": "Processing a GetPage request", "relevant": ["7f0ea89442504af9"]}
+{"query_id": "q_3ed9cf3f863224f7", "query": "Processing WAL", "relevant": ["3ed9cf3f863224f7"]}
+{"query_id": "q_518810d63ed396f3", "query": "Docker images of Neon", "relevant": ["518810d63ed396f3"]}
+{"query_id": "q_e1111ce3bc6fbedf", "query": "Images", "relevant": ["e1111ce3bc6fbedf"]}
+{"query_id": "q_ed84fdd7f56bd7e3", "query": "Build pipeline", "relevant": ["ed84fdd7f56bd7e3"]}
+{"query_id": "q_17d54a22d0c2e8b4", "query": "Docker Compose example", "relevant": ["17d54a22d0c2e8b4"]}
+{"query_id": "q_c0b9c08f23d68e5b", "query": "How to use", "relevant": ["c0b9c08f23d68e5b"]}
+{"query_id": "q_54f49ad654f94518", "query": "check the container name you want to see", "relevant": ["54f49ad654f94518"]}
+{"query_id": "q_2c51bf81edd3b902", "query": "Pageserver storage The main responsibility of the Page Server is to process the incoming WAL, and", "relevant": ["2c51bf81edd3b902"]}
+{"query_id": "q_5bb20856285de113", "query": "but larger LSN range. From the local disk, the layers are further copied to Cloud Storage, for long-term archival. After", "relevant": ["5bb20856285de113"]}
+{"query_id": "q_1b52a242302cf7d5", "query": "Layer map", "relevant": ["1b52a242302cf7d5"]}
+{"query_id": "q_bd1d22d4dfbe2624", "query": "Different kinds of layers", "relevant": ["bd1d22d4dfbe2624"]}
+{"query_id": "q_f704769ea5a1a1a3", "query": "Layer life cycle", "relevant": ["f704769ea5a1a1a3"]}
+{"query_id": "q_2ead83cc47ed09ae", "query": "Layer files (On-disk layers)", "relevant": ["2ead83cc47ed09ae"]}
+{"query_id": "q_6f69553ac2023a21", "query": "Notation used in this document", "relevant": ["6f69553ac2023a21"]}
+{"query_id": "q_8299f76e3b107eb5", "query": "Creating layer files", "relevant": ["8299f76e3b107eb5"]}
+{"query_id": "q_8c0aed534bfcf608", "query": "Reading page versions", "relevant": ["8c0aed534bfcf608"]}
+{"query_id": "q_310498ad88da8d25", "query": "Multiple branches", "relevant": ["310498ad88da8d25"]}
+{"query_id": "q_b6e56e4b732b5ba4", "query": "Garbage collection", "relevant": ["b6e56e4b732b5ba4"]}
+{"query_id": "q_239cfb59a44372e7", "query": "TODO: On LSN ranges", "relevant": ["239cfb59a44372e7"]}
+{"query_id": "q_6ca08874475d0fb8", "query": "Useful development tools", "relevant": ["6ca08874475d0fb8"]}
+{"query_id": "q_50046e0ae040e522", "query": "ccls", "relevant": ["50046e0ae040e522"]}
+{"query_id": "q_436d806275ecce3a", "query": "Emacs", "relevant": ["436d806275ecce3a"]}
+{"query_id": "q_19450abe52de4118", "query": "Page server architecture", "relevant": ["19450abe52de4118"]}
+{"query_id": "q_474145888e658cfb", "query": "Neon local Here I list some objectives to keep in mind when discussing neon-local design and a proposal that brings al", "relevant": ["474145888e658cfb"]}
+{"query_id": "q_b4175a8b132a26f9", "query": "Postgres that \"sync\" is succeed. > Question: How should it operate in a local setup? In my understanding it should push", "relevant": ["b4175a8b132a26f9"]}
+{"query_id": "q_ae2ee56ec37651c4", "query": "Cluster size limits", "relevant": ["ae2ee56ec37651c4"]}
+{"query_id": "q_ccf68d9bc6acbf9f", "query": "Summary", "relevant": ["ccf68d9bc6acbf9f"]}
+{"query_id": "q_5c63642f00b918d0", "query": "Motivation", "relevant": ["5c63642f00b918d0"]}
+{"query_id": "q_58a36c63ed0fff2e", "query": "Components", "relevant": ["58a36c63ed0fff2e"]}
+{"query_id": "q_d6d999629c6a344e", "query": "Proposed implementation", "relevant": ["d6d999629c6a344e"]}
+{"query_id": "q_cd3c127f77fc8a2d", "query": "**Reliability, failure modes and corner cases**", "relevant": ["cd3c127f77fc8a2d"]}
+{"query_id": "q_02cc1a3bf8d28735", "query": "**Security implications**", "relevant": ["02cc1a3bf8d28735"]}
+{"query_id": "q_6aef947f6bc3b526", "query": "Sparse Keyspace for Relation Directories", "relevant": ["6aef947f6bc3b526"]}
+{"query_id": "q_c5a646aa8bb311aa", "query": "Summary", "relevant": ["c5a646aa8bb311aa"]}
+{"query_id": "q_5142df5de7d7a302", "query": "Motivation", "relevant": ["5142df5de7d7a302"]}
+{"query_id": "q_b9761ecc0d379f38", "query": "Key Mapping", "relevant": ["b9761ecc0d379f38"]}
+{"query_id": "q_4d33551c497d7a59", "query": "Changes to Sparse Keyspace", "relevant": ["4d33551c497d7a59"]}
+{"query_id": "q_768bcd382cee26db", "query": "Coexistence of the Old and New Keyspaces Migrating to the new keyspace will be done gradually: when we flip a config", "relevant": ["768bcd382cee26db"]}
+{"query_id": "q_b2587f9859b3e116", "query": "only exists either in the old reldir key or in the new sparse keyspace. It is not possible to have a table to be recorde", "relevant": ["b2587f9859b3e116"]}
+{"query_id": "q_b6d6d558750fa2ad", "query": "Next Steps", "relevant": ["b6d6d558750fa2ad"]}
+{"query_id": "q_62b45870936ce383", "query": "Full Migration", "relevant": ["62b45870936ce383"]}
+{"query_id": "q_80011efdae2dcbbf", "query": "The `sparse_reldir_db1_table8` key gets dropped as part of the image layer generation code for the sparse keyspace.", "relevant": ["80011efdae2dcbbf"]}
+{"query_id": "q_a0e57d10f81d7f5b", "query": "Note that the read path will stop reading if a key is not found in the image layer covering the key range so there", "relevant": ["a0e57d10f81d7f5b"]}
+{"query_id": "q_f9766960ea0f2753", "query": "are no correctness issue.", "relevant": ["f9766960ea0f2753"]}
+{"query_id": "q_ee5afb0fbb92c31d", "query": "Consolidate Relation Size Keys", "relevant": ["ee5afb0fbb92c31d"]}
+{"query_id": "q_ff87892a4713073c", "query": "Migrate DBDir Keys", "relevant": ["ff87892a4713073c"]}
+{"query_id": "q_47c1d915f7f15c3c", "query": "Physical Replication", "relevant": ["47c1d915f7f15c3c"]}
+{"query_id": "q_f1a5080812211237", "query": "Summary", "relevant": ["f1a5080812211237"]}
+{"query_id": "q_334850eaf8abe8d5", "query": "Motivation", "relevant": ["334850eaf8abe8d5"]}
+{"query_id": "q_75111166ab9b308e", "query": "Non Goals (if relevant)", "relevant": ["75111166ab9b308e"]}
+{"query_id": "q_c093e459aa58d1ea", "query": "Impacted components (e.g. pageserver, safekeeper, console, etc)", "relevant": ["c093e459aa58d1ea"]}
+{"query_id": "q_0ab0fb913842da90", "query": "Context", "relevant": ["0ab0fb913842da90"]}
+{"query_id": "q_9c9e5adabd1f2aa4", "query": "PostgreSQL startup sequence", "relevant": ["9c9e5adabd1f2aa4"]}
+{"query_id": "q_c8e4bc84f0dd8465", "query": "Decisions, Issues", "relevant": ["c8e4bc84f0dd8465"]}
+{"query_id": "q_ef780ee5a6c63770", "query": "Cache invalidation in replica", "relevant": ["ef780ee5a6c63770"]}
+{"query_id": "q_cbf976881312f855", "query": "In-progress transactions", "relevant": ["cbf976881312f855"]}
+{"query_id": "q_a5f2651935017fa3", "query": "Recovery conflicts and Hot standby feedback", "relevant": ["a5f2651935017fa3"]}
+{"query_id": "q_685711d389e9b464", "query": "Relationship of settings between primary and replica", "relevant": ["685711d389e9b464"]}
+{"query_id": "q_6911d5b469e0c76e", "query": "Interaction with Pageserver GC", "relevant": ["6911d5b469e0c76e"]}
+{"query_id": "q_ad8815a522140104", "query": "Synchronous replication", "relevant": ["ad8815a522140104"]}
+{"query_id": "q_0b01d0140fae76f3", "query": "Direct IO For Pageserver", "relevant": ["0b01d0140fae76f3"]}
+{"query_id": "q_5ccf357ff9abcada", "query": "Summary", "relevant": ["5ccf357ff9abcada"]}
+{"query_id": "q_ef241b7d0564387e", "query": "Timeline", "relevant": ["ef241b7d0564387e"]}
+{"query_id": "q_e610bcfffb8ecfc5", "query": "Background: Terminology & Glossary **kernel page cache**: the Linux kernel's page cache is a write-back cache for fil", "relevant": ["e610bcfffb8ecfc5"]}
+{"query_id": "q_22331eb41f9d1926", "query": "when exactly the IOs are issued. In buffered IO, it's the syscall handlers, kernel page cache, and memory management sub", "relevant": ["22331eb41f9d1926"]}
+{"query_id": "q_24d9becff93de9d2", "query": "Background: History Of Caching In Pageserver", "relevant": ["24d9becff93de9d2"]}
+{"query_id": "q_5c31706134366e24", "query": "High-Level Design So, before work on this project started, all data block reads and the entire write path of Pageserv", "relevant": ["5c31706134366e24"]}
+{"query_id": "q_244f16ce38b2bf03", "query": "cache. These are: - read latency improvements for repeat reads of the same data (\"locality of reference\") - asterisk: on", "relevant": ["244f16ce38b2bf03"]}
+{"query_id": "q_a01e52f6d9b2e1e2", "query": "Desired End State", "relevant": ["a01e52f6d9b2e1e2"]}
+{"query_id": "q_ef2dc383cc8e9af2", "query": "Design & Implementation", "relevant": ["ef2dc383cc8e9af2"]}
+{"query_id": "q_fec8c70317f18ed0", "query": "Prerequisites", "relevant": ["fec8c70317f18ed0"]}
+{"query_id": "q_38b449708c07f7ca", "query": "Ensuring Adherence to Alignment Requirements", "relevant": ["38b449708c07f7ca"]}
+{"query_id": "q_383836d144ead5bd", "query": "Configuration / Feature Flagging", "relevant": ["383836d144ead5bd"]}
+{"query_id": "q_5dd2da081f9a983c", "query": "Correctness Validation", "relevant": ["5dd2da081f9a983c"]}
+{"query_id": "q_5d36b5b038e25674", "query": "Performance Validation", "relevant": ["5d36b5b038e25674"]}
+{"query_id": "q_f2eb956f443b8e53", "query": "Future Work", "relevant": ["f2eb956f443b8e53"]}
+{"query_id": "q_fcc86a23422e37b5", "query": "Appendix", "relevant": ["fcc86a23422e37b5"]}
+{"query_id": "q_a3bca2d1d2e61e8e", "query": "Why Kernel Page Cache Is Ineffective At Tenant High Density", "relevant": ["a3bca2d1d2e61e8e"]}
+{"query_id": "q_005f00594468ca7b", "query": "Durability & Consensus", "relevant": ["005f00594468ca7b"]}
+{"query_id": "q_449f7dc50532a9e5", "query": "or truncated. The VCL point is determined in the Primary. It is not strictly necessary to store it in the safekeepers, b", "relevant": ["449f7dc50532a9e5"]}
+{"query_id": "q_cb221c380e68ff8b", "query": "holding a valid lease. If the primary node dies, the lease expires after a timeout period, and a new node is allowed to", "relevant": ["cb221c380e68ff8b"]}
+{"query_id": "q_1457d485f7baeeac", "query": "Seamless tenant migration", "relevant": ["1457d485f7baeeac"]}
+{"query_id": "q_9d6e29e1604da8a3", "query": "Summary", "relevant": ["9d6e29e1604da8a3"]}
+{"query_id": "q_8f95e0ee8ae6083b", "query": "Motivation", "relevant": ["8f95e0ee8ae6083b"]}
+{"query_id": "q_e7b0898acd5e79bf", "query": "Non Goals", "relevant": ["e7b0898acd5e79bf"]}
+{"query_id": "q_c52a8485558ee43a", "query": "Impacted components", "relevant": ["c52a8485558ee43a"]}
+{"query_id": "q_afde429c37673aa7", "query": "Terminology", "relevant": ["afde429c37673aa7"]}
+{"query_id": "q_02c8bca058243985", "query": "Implementation (high level)", "relevant": ["02c8bca058243985"]}
+{"query_id": "q_eefa3abcaa0506e8", "query": "Warm secondary locations", "relevant": ["eefa3abcaa0506e8"]}
+{"query_id": "q_c1f9fb374847b7e8", "query": "Location modes", "relevant": ["c1f9fb374847b7e8"]}
+{"query_id": "q_1ff2dcc0776adb9c", "query": "Cutover procedure Define old location and new location as \"Node A\" and \"Node B\".  Consider", "relevant": ["1ff2dcc0776adb9c"]}
+{"query_id": "q_bd4ed646d07e647a", "query": "resources available. - We are migrating a tenant which does not use secondary locations to save on cost. #### Permanent", "relevant": ["bd4ed646d07e647a"]}
+{"query_id": "q_2c399a7e17def4ef", "query": "Implementation (detail)", "relevant": ["2c399a7e17def4ef"]}
+{"query_id": "q_a010de58bc62f2b3", "query": "Purpose of AttachedMulti, AttachedStale #### AttachedMulti Ordinarily, an attached pageserver whose generation is th", "relevant": ["a010de58bc62f2b3"]}
+{"query_id": "q_b4b3cd70cd611ea6", "query": "that new pageserver will be responsible for sending consumption metrics. #### Disk Pressure & AttachedStale Over long pe", "relevant": ["b4b3cd70cd611ea6"]}
+{"query_id": "q_1410461699b2af28", "query": "Warm secondary updates #### Layer heatmap The secondary location's job is to serve reads **with the same quality of", "relevant": ["1410461699b2af28"]}
+{"query_id": "q_a532fe520e310957", "query": "to avoid flapping, it will remember the access time of the layer it was most recently asked to evict, and layers whose a", "relevant": ["a532fe520e310957"]}
+{"query_id": "q_b921f0618f2b52d1", "query": "Location configuration API", "relevant": ["b921f0618f2b52d1"]}
+{"query_id": "q_4bf55faf27254c59", "query": "Database schema for locations", "relevant": ["4bf55faf27254c59"]}
+{"query_id": "q_bb909e4fb578006f", "query": "Executing migrations", "relevant": ["bb909e4fb578006f"]}
+{"query_id": "q_36c213e11704df60", "query": "Recovery from failures during migration", "relevant": ["36c213e11704df60"]}
+{"query_id": "q_2178e8d5676ed1e8", "query": "Control plane -> Pageserver reconciliation", "relevant": ["2178e8d5676ed1e8"]}
+{"query_id": "q_e264c213e34333ec", "query": "Alternatives considered", "relevant": ["e264c213e34333ec"]}
+{"query_id": "q_9b72fb79abe06745", "query": "Only enabling secondary locations for tenants on a higher service tier", "relevant": ["9b72fb79abe06745"]}
+{"query_id": "q_e1660c8fb4b5e64a", "query": "Hot secondary locations (continuous WAL replay)", "relevant": ["e1660c8fb4b5e64a"]}
+{"query_id": "q_6aaa9b9ca75841c8", "query": "Cold secondary locations", "relevant": ["6aaa9b9ca75841c8"]}
+{"query_id": "q_643cfeeca00080fc", "query": "Pageserver-granularity failover", "relevant": ["643cfeeca00080fc"]}
+{"query_id": "q_7f7a4a49979ef47a", "query": "Readonly during migration", "relevant": ["7f7a4a49979ef47a"]}
+{"query_id": "q_7b5b5ef453602046", "query": "Peer-to-peer pageserver communication", "relevant": ["7b5b5ef453602046"]}
+{"query_id": "q_3c8cba8dc004208a", "query": "Storage messaging", "relevant": ["3c8cba8dc004208a"]}
+{"query_id": "q_230da0dfe23ebe34", "query": "Motivation", "relevant": ["230da0dfe23ebe34"]}
+{"query_id": "q_a3fb59b0cf4a05b4", "query": "Summary", "relevant": ["a3fb59b0cf4a05b4"]}
+{"query_id": "q_daeb7aea4b67027d", "query": "Non-goals", "relevant": ["daeb7aea4b67027d"]}
+{"query_id": "q_9c1911210714ebc9", "query": "Impacted components", "relevant": ["9c1911210714ebc9"]}
+{"query_id": "q_49f01f5541345a35", "query": "Possible implementation: custom message broker in the console", "relevant": ["49f01f5541345a35"]}
+{"query_id": "q_c93c9b1dcdb44675", "query": "Scalability", "relevant": ["c93c9b1dcdb44675"]}
+{"query_id": "q_bf9b8bf8f4615784", "query": "High Availability", "relevant": ["bf9b8bf8f4615784"]}
+{"query_id": "q_ea95cd6df1b0c9f7", "query": "Interactions", "relevant": ["ea95cd6df1b0c9f7"]}
+{"query_id": "q_b2121b90909ac216", "query": "Implementation: etcd state store", "relevant": ["b2121b90909ac216"]}
+{"query_id": "q_f53e417f390659bf", "query": "Safekeeper address discovery", "relevant": ["f53e417f390659bf"]}
+{"query_id": "q_fdfa6dc907a17542", "query": "Safekeeper behavior", "relevant": ["fdfa6dc907a17542"]}
+{"query_id": "q_0d6c0af32b9c2f35", "query": "Pageserver behavior", "relevant": ["0d6c0af32b9c2f35"]}
+{"query_id": "q_499005839f84860b", "query": "Interactions", "relevant": ["499005839f84860b"]}
+{"query_id": "q_fcf1fcb40a53eb5d", "query": "Sequence diagrams for different workflows #### Cluster startup ```mermaid", "relevant": ["fcf1fcb40a53eb5d"]}
+{"query_id": "q_d2021df7f05d5de7", "query": "or there is no messages from it in 30 seconds. note over PS1: e.g. SK2 is at 150, SK3 is at 100, chose SK2 as a new repl", "relevant": ["d2021df7f05d5de7"]}
+{"query_id": "q_52b51e898a7cf90d", "query": "Pros/cons", "relevant": ["52b51e898a7cf90d"]}
+{"query_id": "q_2fb867c3f7c454ad", "query": "Console broker/etcd vs gossip:", "relevant": ["2fb867c3f7c454ad"]}
+{"query_id": "q_9a80341eeab25a56", "query": "Console broker vs. etcd:", "relevant": ["9a80341eeab25a56"]}
+{"query_id": "q_eb733ce559835594", "query": "Dispatching a connection", "relevant": ["eb733ce559835594"]}
+{"query_id": "q_e682d5d107fd1f7f", "query": "Authentication", "relevant": ["e682d5d107fd1f7f"]}
+{"query_id": "q_00389fa6fd6cae66", "query": "Routing the connection", "relevant": ["00389fa6fd6cae66"]}
+{"query_id": "q_f77004c4aebc6a73", "query": "Link Auth", "relevant": ["f77004c4aebc6a73"]}
+{"query_id": "q_c72137ec1b299bcf", "query": "Connection URL", "relevant": ["c72137ec1b299bcf"]}
+{"query_id": "q_aa0901c8272fa468", "query": "Pre-defined Endpoint", "relevant": ["aa0901c8272fa468"]}
+{"query_id": "q_0b3f2ceaf3aaf7ee", "query": "Footnotes", "relevant": ["0b3f2ceaf3aaf7ee"]}
+{"query_id": "q_ff5d19be91abf7fb", "query": "Postgres user and database management", "relevant": ["ff5d19be91abf7fb"]}
+{"query_id": "q_bbff42c1f2231b1a", "query": "Overview", "relevant": ["bbff42c1f2231b1a"]}
+{"query_id": "q_4566645915b94014", "query": "Postgres behavior", "relevant": ["4566645915b94014"]}
+{"query_id": "q_9124b57a3406e2ac", "query": "Console user management API", "relevant": ["9124b57a3406e2ac"]}
+{"query_id": "q_629267a16086cbdc", "query": "Managing users from the console", "relevant": ["629267a16086cbdc"]}
+{"query_id": "q_f04a8442e3015695", "query": "Failure modes", "relevant": ["f04a8442e3015695"]}
+{"query_id": "q_64d88bab01edb7d2", "query": "Scalability", "relevant": ["64d88bab01edb7d2"]}
+{"query_id": "q_594f63f9bf03880f", "query": "Rolling Storage Controller Restarts", "relevant": ["594f63f9bf03880f"]}
+{"query_id": "q_4b6c1d5602666604", "query": "Summary", "relevant": ["4b6c1d5602666604"]}
+{"query_id": "q_6a4a0e8629384760", "query": "Motivation", "relevant": ["6a4a0e8629384760"]}
+{"query_id": "q_1c00c66cf4bfeee3", "query": "Current Implementation", "relevant": ["1c00c66cf4bfeee3"]}
+{"query_id": "q_47cfb62dc549bf70", "query": "Prior Art", "relevant": ["47cfb62dc549bf70"]}
+{"query_id": "q_9a113dc9e2a1ac40", "query": "Requirements", "relevant": ["9a113dc9e2a1ac40"]}
+{"query_id": "q_de48f4a094f8eafa", "query": "Non Goals", "relevant": ["de48f4a094f8eafa"]}
+{"query_id": "q_9fb0369a383a5d0f", "query": "Impacted Components", "relevant": ["9fb0369a383a5d0f"]}
+{"query_id": "q_703cbb798845d1a7", "query": "Terminology", "relevant": ["703cbb798845d1a7"]}
+{"query_id": "q_9f6ec75cf1641956", "query": "Implementation", "relevant": ["9f6ec75cf1641956"]}
+{"query_id": "q_a8942ceb05a14adc", "query": "High Level Flow", "relevant": ["a8942ceb05a14adc"]}
+{"query_id": "q_fc12f6b6eed3c7b9", "query": "Kubernetes Deployment Configuration", "relevant": ["fc12f6b6eed3c7b9"]}
+{"query_id": "q_6521dcda420c2059", "query": "Storage Controller Start-Up This section describes the primitives required on the storage controller side and the fl", "relevant": ["6521dcda420c2059"]}
+{"query_id": "q_140f20baddade253", "query": "step fails, the storage controller process exits. Note that no row will exist in the `leaders` table for the first grace", "relevant": ["140f20baddade253"]}
+{"query_id": "q_2b40704a58ac504b", "query": "Handling Failures", "relevant": ["2b40704a58ac504b"]}
+{"query_id": "q_c3b0487eecb4fea7", "query": "Dealing With Split Brain Scenarios", "relevant": ["c3b0487eecb4fea7"]}
+{"query_id": "q_320d904f92b79488", "query": "Ensure Leadership Before Producing Side Effects", "relevant": ["320d904f92b79488"]}
+{"query_id": "q_862f63c5807afeb2", "query": "Leadership Lease", "relevant": ["862f63c5807afeb2"]}
+{"query_id": "q_2481d8d684aebf23", "query": "Notify Pageserver Of Storage Controller Term", "relevant": ["2481d8d684aebf23"]}
+{"query_id": "q_8dde8e89d44f0f0e", "query": "Observability", "relevant": ["8dde8e89d44f0f0e"]}
+{"query_id": "q_3fb3821bb01c95d3", "query": "Alternatives", "relevant": ["3fb3821bb01c95d3"]}
+{"query_id": "q_abfe74ebe418b8c5", "query": "Kubernetes Leases", "relevant": ["abfe74ebe418b8c5"]}
+{"query_id": "q_df57458cebda10d8", "query": "Neon CLI allows you to operate database clusters (catalog clusters) and their commit history locally and in the cloud. S", "relevant": ["df57458cebda10d8"]}
+{"query_id": "q_4c06296eac15010e", "query": "CLI v2 (after chatting with Carl)", "relevant": ["4c06296eac15010e"]}
+{"query_id": "q_90d678e16373df1d", "query": "Ancestor Timeline Deletion", "relevant": ["90d678e16373df1d"]}
+{"query_id": "q_42d92973cbf186ad", "query": "Summary", "relevant": ["42d92973cbf186ad"]}
+{"query_id": "q_65bf8dd7a2f16ba6", "query": "Motivation", "relevant": ["65bf8dd7a2f16ba6"]}
+{"query_id": "q_29b1273c14b86d5d", "query": "Solution", "relevant": ["29b1273c14b86d5d"]}
+{"query_id": "q_be6e3ea5dad43b0e", "query": "Example", "relevant": ["be6e3ea5dad43b0e"]}
+{"query_id": "q_182c07f790c68cc2", "query": "Before", "relevant": ["182c07f790c68cc2"]}
+{"query_id": "q_6e7d559806867a66", "query": "After calling detach ancestor API", "relevant": ["6e7d559806867a66"]}
+{"query_id": "q_d90d52f993dade14", "query": "After removing timelines", "relevant": ["d90d52f993dade14"]}
+{"query_id": "q_c6b8e2743f567627", "query": "Caveats", "relevant": ["c6b8e2743f567627"]}
+{"query_id": "q_78a60790399277ca", "query": "`detach_ancestor` API implementation", "relevant": ["78a60790399277ca"]}
+{"query_id": "q_224ce4b072fe0479", "query": "Phase 1: write out adopted layers to S3", "relevant": ["224ce4b072fe0479"]}
+{"query_id": "q_ca6ea3d0c7256368", "query": "Phase 2: update the child's index", "relevant": ["ca6ea3d0c7256368"]}
+{"query_id": "q_f6ba5c9ffa1287e0", "query": "Phase 3: modify timelines ancestry", "relevant": ["f6ba5c9ffa1287e0"]}
+{"query_id": "q_b0fca61d99b5f962", "query": "Alternatives considered", "relevant": ["b0fca61d99b5f962"]}
+{"query_id": "q_5c66e5b6416f3017", "query": "Generate full image layer on child, rather than adopting parent deltas", "relevant": ["5c66e5b6416f3017"]}
+{"query_id": "q_12a0585bbaa9be3c", "query": "Don't rewrite anything: just fake it in the API", "relevant": ["12a0585bbaa9be3c"]}
+{"query_id": "q_3013ab08d96e0a37", "query": "Avoid copying objects: enable child index to use parent layers directly", "relevant": ["3013ab08d96e0a37"]}
+{"query_id": "q_8b020e5230f65d48", "query": "Performance", "relevant": ["8b020e5230f65d48"]}
+{"query_id": "q_67e860febfb8f569", "query": "Adopting layers", "relevant": ["67e860febfb8f569"]}
+{"query_id": "q_f71088e829bc0a41", "query": "Updating timeline ancestry", "relevant": ["f71088e829bc0a41"]}
+{"query_id": "q_01a5366f552bde4d", "query": "Interaction with other features", "relevant": ["01a5366f552bde4d"]}
+{"query_id": "q_eb6c63ae7c149c06", "query": "Concurrent timeline creation", "relevant": ["eb6c63ae7c149c06"]}
+{"query_id": "q_57872f2ac7e94ac8", "query": "WAL based disaster recovery", "relevant": ["57872f2ac7e94ac8"]}
+{"query_id": "q_96a379abe00f6ffa", "query": "Sharded tenants", "relevant": ["96a379abe00f6ffa"]}
+{"query_id": "q_af1e50caf2f88378", "query": "Coordinating access of multiple pageservers to the same s3 data", "relevant": ["af1e50caf2f88378"]}
+{"query_id": "q_921dafd0349c4204", "query": "Motivation", "relevant": ["921dafd0349c4204"]}
+{"query_id": "q_a03f81b656333c46", "query": "Impacted components (e.g. pageserver, safekeeper, console, etc)", "relevant": ["a03f81b656333c46"]}
+{"query_id": "q_c9f400ff7b48483c", "query": "The problem", "relevant": ["c9f400ff7b48483c"]}
+{"query_id": "q_cd749a0a4fcf42e5", "query": "Relocation", "relevant": ["cd749a0a4fcf42e5"]}
+{"query_id": "q_fda31b64960aecc6", "query": "Standby pageserver", "relevant": ["fda31b64960aecc6"]}
+{"query_id": "q_4f1a63d9e2412ae9", "query": "Observations", "relevant": ["4f1a63d9e2412ae9"]}
+{"query_id": "q_f6e61ef51c42fa52", "query": "Solutions", "relevant": ["f6e61ef51c42fa52"]}
+{"query_id": "q_c264fd4848a8ca46", "query": "Manual orchestration", "relevant": ["c264fd4848a8ca46"]}
+{"query_id": "q_07d5785545d33d68", "query": "Avoid index_part.json", "relevant": ["07d5785545d33d68"]}
+{"query_id": "q_edfa0ad40b3f288f", "query": "Coordination based approach", "relevant": ["edfa0ad40b3f288f"]}
+{"query_id": "q_93882086c0a02fa2", "query": "Avoid metadata file", "relevant": ["93882086c0a02fa2"]}
+{"query_id": "q_c15913819c28b5ab", "query": "External elections", "relevant": ["c15913819c28b5ab"]}
+{"query_id": "q_5fd994d87b6d692a", "query": "Internal elections", "relevant": ["5fd994d87b6d692a"]}
+{"query_id": "q_b6b2584ff1489073", "query": "Eviction", "relevant": ["b6b2584ff1489073"]}
+{"query_id": "q_81a9829d942060a1", "query": "Relocation flow", "relevant": ["81a9829d942060a1"]}
+{"query_id": "q_7c4d59a97d63f410", "query": "Index File", "relevant": ["7c4d59a97d63f410"]}
+{"query_id": "q_236786b2a65855f2", "query": "Remaining issues", "relevant": ["236786b2a65855f2"]}
+{"query_id": "q_762f780ffdf32a0b", "query": "Proposed solution", "relevant": ["762f780ffdf32a0b"]}
+{"query_id": "q_a7ad7542f2c416fc", "query": "What we need to get there?", "relevant": ["a7ad7542f2c416fc"]}
+{"query_id": "q_db333d839fca3250", "query": "Summary", "relevant": ["db333d839fca3250"]}
+{"query_id": "q_c52c2752b747eee2", "query": "Motivation", "relevant": ["c52c2752b747eee2"]}
+{"query_id": "q_6a99a6b43c682653", "query": "Non Goals (if relevant)", "relevant": ["6a99a6b43c682653"]}
+{"query_id": "q_00659bd166c6adc3", "query": "Impacted components (e.g. pageserver, safekeeper, console, etc)", "relevant": ["00659bd166c6adc3"]}
+{"query_id": "q_2347c1fed08d4a3c", "query": "Proposed implementation", "relevant": ["2347c1fed08d4a3c"]}
+{"query_id": "q_05edc6adb88c7dc8", "query": "Phase 1: Refactor ingest", "relevant": ["05edc6adb88c7dc8"]}
+{"query_id": "q_477058d3bfcb0ecb", "query": "Phase 2: Decode & filter on safekeeper", "relevant": ["477058d3bfcb0ecb"]}
+{"query_id": "q_f85a9816c84d798b", "query": "Phase 3: Fan out interpreted WAL", "relevant": ["f85a9816c84d798b"]}
+{"query_id": "q_08533317b8fc694f", "query": "Deployment", "relevant": ["08533317b8fc694f"]}
+{"query_id": "q_361bdb9ef15a1768", "query": "Observability Tips", "relevant": ["361bdb9ef15a1768"]}
+{"query_id": "q_ea2a1b12395818ff", "query": "Future Optimizations", "relevant": ["ea2a1b12395818ff"]}
+{"query_id": "q_9c315313a1c620cd", "query": "Buffering of Interpreted WAL", "relevant": ["9c315313a1c620cd"]}
+{"query_id": "q_3db8a9464cde53c6", "query": "Tweaking the Pagserver Safekeeper Selection Algorithm", "relevant": ["3db8a9464cde53c6"]}
+{"query_id": "q_a76b8fe65c670944", "query": "Pipelining first ingest phase", "relevant": ["a76b8fe65c670944"]}
+{"query_id": "q_4de356a5ed9df7d1", "query": "Alternatives considered", "relevant": ["4de356a5ed9df7d1"]}
+{"query_id": "q_107216c9e0e45aec", "query": "Give safekeepers enough state to fully decode WAL", "relevant": ["107216c9e0e45aec"]}
+{"query_id": "q_09acda898f4e73e2", "query": "Do pre-processing on the compute instead of the safekeeper", "relevant": ["09acda898f4e73e2"]}
+{"query_id": "q_653a9059dac5eff4", "query": "Do wal pre-processing on shard 0 or a separate service, send it to other shards from there", "relevant": ["653a9059dac5eff4"]}
+{"query_id": "q_5f464df77759ce20", "query": "Eviction", "relevant": ["5f464df77759ce20"]}
+{"query_id": "q_7a5c8e50aa481d74", "query": "Materialization", "relevant": ["7a5c8e50aa481d74"]}
+{"query_id": "q_9b235be71b56fcd7", "query": "Coalescing", "relevant": ["9b235be71b56fcd7"]}
+{"query_id": "q_1dfbec87347ca606", "query": "Bundling", "relevant": ["1dfbec87347ca606"]}
+{"query_id": "q_69c94ba86e6ac064", "query": "Garbage collection", "relevant": ["69c94ba86e6ac064"]}
+{"query_id": "q_6648f4bdb61ab783", "query": "Snapshot-first storage architecture", "relevant": ["6648f4bdb61ab783"]}
+{"query_id": "q_641614a188434452", "query": "Principle of operation", "relevant": ["641614a188434452"]}
+{"query_id": "q_75e1371aaa8546b7", "query": "Pageserver operation", "relevant": ["75e1371aaa8546b7"]}
+{"query_id": "q_78bf01ce46c7a876", "query": "Cloud snapshot manager operation", "relevant": ["78bf01ce46c7a876"]}
+{"query_id": "q_1b5ce1ab8e37fe97", "query": "Snapshot names, deletion and concurrency", "relevant": ["1b5ce1ab8e37fe97"]}
+{"query_id": "q_fdf6eeda0e51bf0c", "query": "Branching", "relevant": ["fdf6eeda0e51bf0c"]}
+{"query_id": "q_9946d67f874b3c0b", "query": "Long-term file format", "relevant": ["9946d67f874b3c0b"]}
+{"query_id": "q_6e51826d7fdd143b", "query": "S3 semantics, and other kinds of storage", "relevant": ["6e51826d7fdd143b"]}
+{"query_id": "q_ded14fc28a37afea", "query": "Notes", "relevant": ["ded14fc28a37afea"]}
+{"query_id": "q_4adb6c958f573f7d", "query": "Repository format", "relevant": ["4adb6c958f573f7d"]}
+{"query_id": "q_a3e45c0adb35d16b", "query": "Directory structure, version 1", "relevant": ["a3e45c0adb35d16b"]}
+{"query_id": "q_d6ec4a2d32475eae", "query": "Timelines", "relevant": ["d6ec4a2d32475eae"]}
+{"query_id": "q_ec106575a516e906", "query": "Refs", "relevant": ["ec106575a516e906"]}
+{"query_id": "q_d1e3715dd1058e4d", "query": "Datadirs", "relevant": ["d1e3715dd1058e4d"]}
+{"query_id": "q_7bf5e1bcf84f8fc8", "query": "Version 2", "relevant": ["7bf5e1bcf84f8fc8"]}
+{"query_id": "q_bd908fbba1e4d4e1", "query": "Operations", "relevant": ["bd908fbba1e4d4e1"]}
+{"query_id": "q_732bb537931417cf", "query": "Garbage collection", "relevant": ["732bb537931417cf"]}
+{"query_id": "q_378acf7f74659dfe", "query": "neon push/pull", "relevant": ["378acf7f74659dfe"]}
+{"query_id": "q_0770bfb6e4084b8a", "query": "neon checkout/commit", "relevant": ["0770bfb6e4084b8a"]}
+{"query_id": "q_7a1adb14e884b96b", "query": "Why LSM trees?", "relevant": ["7a1adb14e884b96b"]}
+{"query_id": "q_45f91760bdafd3d1", "query": "Overview", "relevant": ["45f91760bdafd3d1"]}
+{"query_id": "q_0c6136b19d51acba", "query": "Memtable", "relevant": ["0c6136b19d51acba"]}
+{"query_id": "q_d0041dd22d19040a", "query": "L0", "relevant": ["d0041dd22d19040a"]}
+{"query_id": "q_fb6e3e8ded148e88", "query": "L1", "relevant": ["fb6e3e8ded148e88"]}
+{"query_id": "q_9776aa75c23be8e8", "query": "Image layers", "relevant": ["9776aa75c23be8e8"]}
+{"query_id": "q_6d6ed9287ec5dec8", "query": "Partitioning scheme", "relevant": ["6d6ed9287ec5dec8"]}
+{"query_id": "q_05349db71b1df81d", "query": "Additional Reading", "relevant": ["05349db71b1df81d"]}
+{"query_id": "q_17d2329429e7d14c", "query": "Supporting custom user Extensions (Dynamic Extension Loading)", "relevant": ["17d2329429e7d14c"]}
+{"query_id": "q_f1bf2c62cf3b5c52", "query": "Motivation", "relevant": ["f1bf2c62cf3b5c52"]}
+{"query_id": "q_3e0ed72357f00a7d", "query": "Summary", "relevant": ["3e0ed72357f00a7d"]}
+{"query_id": "q_3e17176f42830e75", "query": "Components", "relevant": ["3e17176f42830e75"]}
+{"query_id": "q_bee1986656186105", "query": "Requirements", "relevant": ["bee1986656186105"]}
+{"query_id": "q_f1be92bf10abcf08", "query": "Proposed implementation", "relevant": ["f1be92bf10abcf08"]}
+{"query_id": "q_65d1a00e8623760a", "query": "On-demand, JIT-loading of extensions", "relevant": ["65d1a00e8623760a"]}
+{"query_id": "q_5b38ff95ab01e5b0", "query": "Alternative solutions", "relevant": ["5b38ff95ab01e5b0"]}
+{"query_id": "q_29a4b34b565fcd27", "query": "Idea extensions", "relevant": ["29a4b34b565fcd27"]}
+{"query_id": "q_00fb8a564d9065fe", "query": "Extension Storage implementation", "relevant": ["00fb8a564d9065fe"]}
+{"query_id": "q_e40e4472e024b203", "query": "How to add new extension to the Extension Storage?", "relevant": ["e40e4472e024b203"]}
+{"query_id": "q_1efd9675f699ee92", "query": "How do we deal with extension versions and updates?", "relevant": ["1efd9675f699ee92"]}
+{"query_id": "q_e679a830c2b40975", "query": "Alternatives", "relevant": ["e679a830c2b40975"]}
+{"query_id": "q_7ab34e8ca0374805", "query": "Memo: Endpoint Persistent Unlogged Files Storage", "relevant": ["7ab34e8ca0374805"]}
+{"query_id": "q_eccb2f9b5e241a25", "query": "Summary", "relevant": ["eccb2f9b5e241a25"]}
+{"query_id": "q_9708c39e82b0adae", "query": "Motivation", "relevant": ["9708c39e82b0adae"]}
+{"query_id": "q_dbda7eee9216fb04", "query": "Goals", "relevant": ["dbda7eee9216fb04"]}
+{"query_id": "q_b4b3cc34d6e316c9", "query": "Non Goals (if relevant)", "relevant": ["b4b3cc34d6e316c9"]}
+{"query_id": "q_08dbd2adda04d77e", "query": "Impacted components", "relevant": ["08dbd2adda04d77e"]}
+{"query_id": "q_a36c2b91a9ce28cb", "query": "Proposed implementation", "relevant": ["a36c2b91a9ce28cb"]}
+{"query_id": "q_dee8d868a22721ab", "query": "Reliability, failure modes and corner cases (if relevant)", "relevant": ["dee8d868a22721ab"]}
+{"query_id": "q_eaa61f51f6d65a33", "query": "Interaction/Sequence diagram (if relevant)", "relevant": ["eaa61f51f6d65a33"]}
+{"query_id": "q_4231cb1181ef6f53", "query": "Scalability (if relevant)", "relevant": ["4231cb1181ef6f53"]}
+{"query_id": "q_53260af61ea82d5b", "query": "Security implications (if relevant)", "relevant": ["53260af61ea82d5b"]}
+{"query_id": "q_30c6c6689d8d3c65", "query": "Unresolved questions (if relevant)", "relevant": ["30c6c6689d8d3c65"]}
+{"query_id": "q_3df7e77fdac57561", "query": "Alternative implementation (if relevant)", "relevant": ["3df7e77fdac57561"]}
+{"query_id": "q_213d95718dbfd029", "query": "Use AUXfile", "relevant": ["213d95718dbfd029"]}
+{"query_id": "q_8e50ce6cee44b642", "query": "Sign URLs for read/write operations, instead of proxying them", "relevant": ["8e50ce6cee44b642"]}
+{"query_id": "q_5a5692b5be88a2be", "query": "Give endpoints each their own directly accessed block volume", "relevant": ["5a5692b5be88a2be"]}
+{"query_id": "q_8a8230099b4bcc69", "query": "Put the files into a table", "relevant": ["8a8230099b4bcc69"]}
+{"query_id": "q_b1ecf46fa840473a", "query": "Definition of Done (if relevant)", "relevant": ["b1ecf46fa840473a"]}
+{"query_id": "q_d79c83827f84f541", "query": "Splitting cloud console", "relevant": ["d79c83827f84f541"]}
+{"query_id": "q_737f16581bddd549", "query": "Summary", "relevant": ["737f16581bddd549"]}
+{"query_id": "q_50013d5e08b7992f", "query": "Motivation", "relevant": ["50013d5e08b7992f"]}
+{"query_id": "q_b98e53ef17ba86e2", "query": "Proposed implementation", "relevant": ["b98e53ef17ba86e2"]}
+{"query_id": "q_4d553f046b3131d6", "query": "Current state of things", "relevant": ["4d553f046b3131d6"]}
+{"query_id": "q_d43b951bb44b8aa9", "query": "Drawing the splitting line The most challenging and the most important thing is to define the line that will split n", "relevant": ["d43b951bb44b8aa9"]}
+{"query_id": "q_e6c200d7460106a4", "query": "python tests - make build scripts, code generation scripts - database migrations - swagger definitions The single entryp", "relevant": ["e6c200d7460106a4"]}
+{"query_id": "q_de25b69a9574b48f", "query": "control-plane API", "relevant": ["de25b69a9574b48f"]}
+{"query_id": "q_49d59ea046d9d706", "query": "Getting updates from the storage", "relevant": ["49d59ea046d9d706"]}
+{"query_id": "q_97f5bdf2723f8e37", "query": "Next steps", "relevant": ["97f5bdf2723f8e37"]}
+{"query_id": "q_86158cbce63ae462", "query": "Non Goals", "relevant": ["86158cbce63ae462"]}
+{"query_id": "q_4c63df6881f6d3e8", "query": "Impacted components", "relevant": ["4c63df6881f6d3e8"]}
+{"query_id": "q_fb225eaecf412334", "query": "Scalability", "relevant": ["fb225eaecf412334"]}
+{"query_id": "q_c1a5d7bdb16cc3f6", "query": "Security implications", "relevant": ["c1a5d7bdb16cc3f6"]}
+{"query_id": "q_2af12ea40da08f1f", "query": "Alternative implementation", "relevant": ["2af12ea40da08f1f"]}
+{"query_id": "q_45634afa0f0a6897", "query": "Pros/cons of proposed approaches (TODO)", "relevant": ["45634afa0f0a6897"]}
+{"query_id": "q_f08d9be7409bcc48", "query": "Definition of Done", "relevant": ["f08d9be7409bcc48"]}
+{"query_id": "q_5361a9bcf88db732", "query": "Next steps", "relevant": ["5361a9bcf88db732"]}
+{"query_id": "q_9d412c583f162476", "query": "Concurrent IO for Pageserver Read Path", "relevant": ["9d412c583f162476"]}
+{"query_id": "q_c8e454f38238d514", "query": "Summary", "relevant": ["c8e454f38238d514"]}
+{"query_id": "q_0c273b6cebf2e72a", "query": "Refs", "relevant": ["0c273b6cebf2e72a"]}
+{"query_id": "q_deb91fe80c326316", "query": "Background & Motivation", "relevant": ["deb91fe80c326316"]}
+{"query_id": "q_deed64b97d7413e4", "query": "Design", "relevant": ["deed64b97d7413e4"]}
+{"query_id": "q_7f782648649d00a6", "query": "Avoiding Waiting For IO During Traversal", "relevant": ["7f782648649d00a6"]}
+{"query_id": "q_2080681a52cd9214", "query": "Concurrent IOs, Submission & Completion", "relevant": ["2080681a52cd9214"]}
+{"query_id": "q_65771ca6d86770f8", "query": "Error handling, Panics, Cancellation-Safety", "relevant": ["65771ca6d86770f8"]}
+{"query_id": "q_8ac00dad0404f895", "query": "Sidecar Task Lifecycle", "relevant": ["8ac00dad0404f895"]}
+{"query_id": "q_2988504abd8533c5", "query": "Feature Gating", "relevant": ["2988504abd8533c5"]}
+{"query_id": "q_cfdc9af5d4aa5d95", "query": "Alternatives Explored & Caveats Encountered", "relevant": ["cfdc9af5d4aa5d95"]}
+{"query_id": "q_d9f93171aa0f853a", "query": "Future Work", "relevant": ["d9f93171aa0f853a"]}
+{"query_id": "q_12a5b6513b8cbc42", "query": "Enable `Timeline::get`", "relevant": ["12a5b6513b8cbc42"]}
+{"query_id": "q_9e019223eaaa4b01", "query": "Concurrent On-Demand Downloads enabled by Detached Indices", "relevant": ["9e019223eaaa4b01"]}
+{"query_id": "q_71ea63dcbd1deaeb", "query": "New `tokio-epoll-uring` API That Separates Submission & Wait-For-Completion", "relevant": ["71ea63dcbd1deaeb"]}
+{"query_id": "q_bc706718ca52de80", "query": "Opaque Futures Are Brittle", "relevant": ["bc706718ca52de80"]}
+{"query_id": "q_31851b6b4b6501e6", "query": "Command line interface (end-user)", "relevant": ["31851b6b4b6501e6"]}
+{"query_id": "q_7f01b3c4d25d6e2a", "query": "Possible usage scenarios", "relevant": ["7f01b3c4d25d6e2a"]}
+{"query_id": "q_fb0df46adc559616", "query": "Install neon, run a postgres", "relevant": ["fb0df46adc559616"]}
+{"query_id": "q_aeb4ae7e9b69f081", "query": "Import standalone postgres to neon", "relevant": ["aeb4ae7e9b69f081"]}
+{"query_id": "q_efa9f819c21711d6", "query": "Pull snapshot with some publicly shared database", "relevant": ["efa9f819c21711d6"]}
+{"query_id": "q_4c4de80472ad3b42", "query": "Create snapshot and push it to the cloud", "relevant": ["4c4de80472ad3b42"]}
+{"query_id": "q_321884b59c3979fe", "query": "Rollback database to the snapshot", "relevant": ["321884b59c3979fe"]}
+{"query_id": "q_550011e28f46d6fd", "query": "Configure PITR area (Point In Time Recovery).", "relevant": ["550011e28f46d6fd"]}
+{"query_id": "q_d07cdc501fb01c60", "query": "Manual", "relevant": ["d07cdc501fb01c60"]}
+{"query_id": "q_5a2c6c22f7f4f00f", "query": "storage", "relevant": ["5a2c6c22f7f4f00f"]}
+{"query_id": "q_e0b80905738d8ba8", "query": "pg", "relevant": ["e0b80905738d8ba8"]}
+{"query_id": "q_fbdd20d6d787547c", "query": "snapshot", "relevant": ["fbdd20d6d787547c"]}
+{"query_id": "q_725a18a9f8c6d294", "query": "pitr", "relevant": ["725a18a9f8c6d294"]}
+{"query_id": "q_e7835f758ff485e1", "query": "console", "relevant": ["e7835f758ff485e1"]}
+{"query_id": "q_06f800b8995ad861", "query": "Preface", "relevant": ["06f800b8995ad861"]}
+{"query_id": "q_0cea3c17c151cef7", "query": "Eric's RFC:", "relevant": ["0cea3c17c151cef7"]}
+{"query_id": "q_35bdc956f1b6ffb0", "query": "Problems/questions", "relevant": ["35bdc956f1b6ffb0"]}
+{"query_id": "q_1959561d49605711", "query": "Current implementation in the 'layered_repo' branch:", "relevant": ["1959561d49605711"]}
+{"query_id": "q_ccb5f0c68580702f", "query": "Problems/questions", "relevant": ["ccb5f0c68580702f"]}
+{"query_id": "q_c42ca7e6423465ba", "query": "Third option (not implemented yet)", "relevant": ["c42ca7e6423465ba"]}
+{"query_id": "q_ba25648084310000", "query": "Further thoughts", "relevant": ["ba25648084310000"]}
+{"query_id": "q_0892e1c81f3eefc3", "query": "Pageserver: split-brain safety for remote storage through generation numbers", "relevant": ["0892e1c81f3eefc3"]}
+{"query_id": "q_3b15a9a3cb8e5ce9", "query": "Summary", "relevant": ["3b15a9a3cb8e5ce9"]}
+{"query_id": "q_0f0aef89707b3afe", "query": "Motivation", "relevant": ["0f0aef89707b3afe"]}
+{"query_id": "q_19f0bd7c4ae5f5a8", "query": "Prior art", "relevant": ["19f0bd7c4ae5f5a8"]}
+{"query_id": "q_ba59886932c77558", "query": "Requirements", "relevant": ["ba59886932c77558"]}
+{"query_id": "q_60bef65d5b32bbcf", "query": "Design Tenets", "relevant": ["60bef65d5b32bbcf"]}
+{"query_id": "q_0f98e04d9b29a157", "query": "Non Goals", "relevant": ["0f98e04d9b29a157"]}
+{"query_id": "q_30e226d3a07aa0af", "query": "Impacted Components", "relevant": ["30e226d3a07aa0af"]}
+{"query_id": "q_12bcc4ead4d77352", "query": "Implementation Part 1: Correctness", "relevant": ["12bcc4ead4d77352"]}
+{"query_id": "q_00a6e99b2e982e12", "query": "Summary", "relevant": ["00a6e99b2e982e12"]}
+{"query_id": "q_153c17278c5ea183", "query": "Generation numbers", "relevant": ["153c17278c5ea183"]}
+{"query_id": "q_de6e790194aab73d", "query": "Object Key Changes #### Generation suffix All object keys (layer objects and index objects) will contain the attachm", "relevant": ["de6e790194aab73d"]}
+{"query_id": "q_d4e16c92027ccae8", "query": "tenant being re-attached to different pageserver nodes: - Create + attach on PS1 in generation 1 - PS1 Do some work, wri", "relevant": ["d4e16c92027ccae8"]}
+{"query_id": "q_8ca6e143581cd703", "query": "Deletion #### Generation number validation While writes are de-conflicted by writers always using their own generati", "relevant": ["8ca6e143581cd703"]}
+{"query_id": "q_2df9be2aff0c3a10", "query": "to LSN `L0` to S3 2. Call out to control plane to validate that the generation which we use for our attachment is still", "relevant": ["2df9be2aff0c3a10"]}
+{"query_id": "q_0c2eae94f385b2e6", "query": "Pageserver attach/startup changes #### Attachment Calls to `/v1/tenant/{tenant_id}/attach` are augmented with an add", "relevant": ["0c2eae94f385b2e6"]}
+{"query_id": "q_9cc68bc315a3ad6c", "query": "for tenants not indicated in the `/re-attach` response: their absence is an implicit detach operation. **Note** if a ten", "relevant": ["9cc68bc315a3ad6c"]}
+{"query_id": "q_87997a6cf899d2d2", "query": "Control Plane Changes #### Store generations for attaching tenants - The `Project` table must store the generation n", "relevant": ["87997a6cf899d2d2"]}
+{"query_id": "q_b7334cb7f290ff2c", "query": "request will change in future if we move to ephemeral node IDs, to be replaced with some correlation ID that helps the c", "relevant": ["b7334cb7f290ff2c"]}
+{"query_id": "q_363d088011c7339f", "query": "Timeline/Branch creation & deletion All of the previous arguments for safety have described operations within", "relevant": ["363d088011c7339f"]}
+{"query_id": "q_fae11b7e2b35f6d6", "query": "and therefore don't have to go through the same deletion queue as GC/compaction layer deletions. This is because once a", "relevant": ["fae11b7e2b35f6d6"]}
+{"query_id": "q_36a2574b5774a0aa", "query": "Unsafe case on badly behaved infrastructure", "relevant": ["36a2574b5774a0aa"]}
+{"query_id": "q_0e9d1c6d04ca52a6", "query": "Implementation Part 2: Optimizations", "relevant": ["0e9d1c6d04ca52a6"]}
+{"query_id": "q_7166835f9b919673", "query": "Persistent deletion queue Between writing our a new index_part.json that doesn't reference an object,", "relevant": ["7166835f9b919673"]}
+{"query_id": "q_cc2323dfd78f8fc5", "query": "into control plane. 4.2 For the subset of entries that passed validation, execute a `DeleteObjects` S3 DELETE request fo", "relevant": ["cc2323dfd78f8fc5"]}
+{"query_id": "q_32e4c12b6830d81e", "query": "Cleaning up orphan objects (scrubbing)", "relevant": ["32e4c12b6830d81e"]}
+{"query_id": "q_39f951ebdfb6496a", "query": "Operational impact", "relevant": ["39f951ebdfb6496a"]}
+{"query_id": "q_2a877437f4edc810", "query": "Availability", "relevant": ["2a877437f4edc810"]}
+{"query_id": "q_891d833793d5f5f0", "query": "Rollout", "relevant": ["891d833793d5f5f0"]}
+{"query_id": "q_ddc2f8413e8c3704", "query": "On-disk backward compatibility", "relevant": ["ddc2f8413e8c3704"]}
+{"query_id": "q_961c16968eb12082", "query": "On-disk forward compatibility", "relevant": ["961c16968eb12082"]}
+{"query_id": "q_64226cb2886588eb", "query": "Frequently Asked Questions", "relevant": ["64226cb2886588eb"]}
+{"query_id": "q_9965bd5172267dc0", "query": "Why a generation _suffix_ rather than _prefix_?", "relevant": ["9965bd5172267dc0"]}
+{"query_id": "q_2c2b4fd68004da01", "query": "Wouldn't it be simpler to have a separate deletion queue per timeline?", "relevant": ["2c2b4fd68004da01"]}
+{"query_id": "q_fa7d75087cfb0264", "query": "Appendix A: Examples of use in high availability/failover", "relevant": ["fa7d75087cfb0264"]}
+{"query_id": "q_ca97913a8f761a8b", "query": "In-place restart of a pageserver", "relevant": ["ca97913a8f761a8b"]}
+{"query_id": "q_43ee0ce458d5ee0e", "query": "Failure of a pageserver", "relevant": ["43ee0ce458d5ee0e"]}
+{"query_id": "q_1ec55d5648518682", "query": "Appendix B: interoperability with other features", "relevant": ["1ec55d5648518682"]}
+{"query_id": "q_b4b280c357ab75a8", "query": "Sharded Keyspace", "relevant": ["b4b280c357ab75a8"]}
+{"query_id": "q_ba66c42710384fc2", "query": "Read replicas", "relevant": ["ba66c42710384fc2"]}
+{"query_id": "q_4065f8065c44501b", "query": "Seamless migration", "relevant": ["4065f8065c44501b"]}
+{"query_id": "q_6418127e09820b24", "query": "Warm secondary locations", "relevant": ["6418127e09820b24"]}
+{"query_id": "q_b782ee2b47761967", "query": "Ephemeral node IDs", "relevant": ["b782ee2b47761967"]}
+{"query_id": "q_1311287b7d0b6c6e", "query": "The state of pageserver tenant relocation", "relevant": ["1311287b7d0b6c6e"]}
+{"query_id": "q_62c9454a11a9f29f", "query": "Motivation", "relevant": ["62c9454a11a9f29f"]}
+{"query_id": "q_c8ad8463f2cbf145", "query": "Summary", "relevant": ["c8ad8463f2cbf145"]}
+{"query_id": "q_16397dc67c73fd45", "query": "Components", "relevant": ["16397dc67c73fd45"]}
+{"query_id": "q_c3d1aacf9749a901", "query": "Requirements", "relevant": ["c3d1aacf9749a901"]}
+{"query_id": "q_0acb7d267ec729ec", "query": "The original proposed implementation", "relevant": ["0acb7d267ec729ec"]}
+{"query_id": "q_27a5b9caad3edd8d", "query": "Concurrent GC and Compaction The problem is that they can run on both, PS1 and PS2.  Consider this example from [Pag", "relevant": ["27a5b9caad3edd8d"]}
+{"query_id": "q_88fee60b8a0d1250", "query": "storage so it is possible that after rollback remote state will be different from one that was observed by source pagese", "relevant": ["88fee60b8a0d1250"]}
+{"query_id": "q_62c4e66a6a1e16bb", "query": "Concurrent branch creation", "relevant": ["62c4e66a6a1e16bb"]}
+{"query_id": "q_65faf5f7cdbb9183", "query": "Simplistic approach", "relevant": ["65faf5f7cdbb9183"]}
+{"query_id": "q_eed546163ce8cf8f", "query": "Lease based approach", "relevant": ["eed546163ce8cf8f"]}
+{"query_id": "q_91412059aa4a0ad5", "query": "Summary", "relevant": ["91412059aa4a0ad5"]}
+{"query_id": "q_d9f6fa5af2601fd8", "query": "Shard splitting", "relevant": ["d9f6fa5af2601fd8"]}
+{"query_id": "q_a1d83a9ab90fca2a", "query": "Summary", "relevant": ["a1d83a9ab90fca2a"]}
+{"query_id": "q_139791784844dcc8", "query": "Motivation", "relevant": ["139791784844dcc8"]}
+{"query_id": "q_7c1d115c3832767c", "query": "Prior art", "relevant": ["7c1d115c3832767c"]}
+{"query_id": "q_7f4b8ec4bfc1196c", "query": "Requirements", "relevant": ["7f4b8ec4bfc1196c"]}
+{"query_id": "q_036a661eab1800a1", "query": "Non Goals", "relevant": ["036a661eab1800a1"]}
+{"query_id": "q_64f1456fe3364f42", "query": "Impacted Components", "relevant": ["64f1456fe3364f42"]}
+{"query_id": "q_fde8873b4b765986", "query": "Terminology", "relevant": ["fde8873b4b765986"]}
+{"query_id": "q_4e23248f6459bce0", "query": "Background", "relevant": ["4e23248f6459bce0"]}
+{"query_id": "q_29a3d3184799c6f6", "query": "Implementation", "relevant": ["29a3d3184799c6f6"]}
+{"query_id": "q_30c0840ea22cccd1", "query": "Pageserver Split API The pageserver will expose a new API endpoint at `/v1/tenant/:tenant_shard_id/shard_split`", "relevant": ["30c0840ea22cccd1"]}
+{"query_id": "q_d14d0c285ea9e8ef", "query": "it down, any page_service handlers will also shut down, causing clients to disconnect. When the client reconnects, it wi", "relevant": ["d14d0c285ea9e8ef"]}
+{"query_id": "q_4c731aeb4db41e7e", "query": "Storage Controller Split procedure", "relevant": ["4c731aeb4db41e7e"]}
+{"query_id": "q_53b1e2641df87f73", "query": "Recovering from failures #### Rolling back an incomplete split An incomplete shard split may be rolled back quite si", "relevant": ["53b1e2641df87f73"]}
+{"query_id": "q_14a65f8d1a75fb30", "query": "must not have been deleted: this property will come \"for free\" when we first roll out sharding, by simply not implementi", "relevant": ["14a65f8d1a75fb30"]}
+{"query_id": "q_0fcfa02814d5cff9", "query": "underway, then the split request handler will notice an InProgress marker in TenantManager, and return 503 to encourage", "relevant": ["0fcfa02814d5cff9"]}
+{"query_id": "q_fbfed1eaf08362ea", "query": "Handling secondary locations", "relevant": ["fbfed1eaf08362ea"]}
+{"query_id": "q_c5749dad0d743c1a", "query": "Conditions to trigger a split", "relevant": ["c5749dad0d743c1a"]}
+{"query_id": "q_c83386d00d475110", "query": "Optimizations", "relevant": ["c83386d00d475110"]}
+{"query_id": "q_0b6ec4616aa4345e", "query": "Flush parent shard to remote storage during split", "relevant": ["0b6ec4616aa4345e"]}
+{"query_id": "q_4440fe3b562aed40", "query": "Hard linking parent layers into child shard directories", "relevant": ["4440fe3b562aed40"]}
+{"query_id": "q_091ba85651f7f676", "query": "Filtering during compaction", "relevant": ["091ba85651f7f676"]}
+{"query_id": "q_8a84e37340315112", "query": "Proactive compaction", "relevant": ["8a84e37340315112"]}
+{"query_id": "q_1366e7b739af22ad", "query": "Cleaning up parent-shard layers", "relevant": ["1366e7b739af22ad"]}
+{"query_id": "q_5b4dedf13e0b4dd1", "query": "Splitting secondary locations", "relevant": ["5b4dedf13e0b4dd1"]}
+{"query_id": "q_12176776757b7257", "query": "FAQ/Alternatives", "relevant": ["12176776757b7257"]}
+{"query_id": "q_2d7f934d17a72a4a", "query": "What should the thresholds be set to?", "relevant": ["2d7f934d17a72a4a"]}
+{"query_id": "q_cf446e4b0b4429dc", "query": "Is it worth just rewriting all the data during a split to simplify reasoning about space?", "relevant": ["cf446e4b0b4429dc"]}
+{"query_id": "q_6a0190e6a622f9e2", "query": "Summary", "relevant": ["6a0190e6a622f9e2"]}
+{"query_id": "q_4cb4233be551d9a9", "query": "Design Choices", "relevant": ["4cb4233be551d9a9"]}
+{"query_id": "q_946ed07cb9e94523", "query": "Durability", "relevant": ["946ed07cb9e94523"]}
+{"query_id": "q_94c341d73d8a10c8", "query": "Consensus", "relevant": ["94c341d73d8a10c8"]}
+{"query_id": "q_62313957fcd22b19", "query": "Scale", "relevant": ["62313957fcd22b19"]}
+{"query_id": "q_5480fba55262dfb0", "query": "High Level Design", "relevant": ["5480fba55262dfb0"]}
+{"query_id": "q_4e3d22ce4e835ef1", "query": "Infrastructure", "relevant": ["4e3d22ce4e835ef1"]}
+{"query_id": "q_0feafce252110511", "query": "Pageserver tenant scheduling & reconciliation", "relevant": ["0feafce252110511"]}
+{"query_id": "q_9d062ed46bcc99a1", "query": "Intent & observed state", "relevant": ["9d062ed46bcc99a1"]}
+{"query_id": "q_9cd24e6d68a9c977", "query": "Tenant Reconciliation", "relevant": ["9cd24e6d68a9c977"]}
+{"query_id": "q_e2e12d7f83e960a6", "query": "Scheduling optimisation", "relevant": ["e2e12d7f83e960a6"]}
+{"query_id": "q_37f7eea5b47f9a51", "query": "Pageserver heartbeats and failure", "relevant": ["37f7eea5b47f9a51"]}
+{"query_id": "q_5c0c76775619c350", "query": "Pageserver timeline CRUD operations", "relevant": ["5c0c76775619c350"]}
+{"query_id": "q_8c8e281139fa5b76", "query": "Zero-downtime controller deployments", "relevant": ["8c8e281139fa5b76"]}
+{"query_id": "q_a7c695995ccf304c", "query": "Graceful drain & fill of pageservers during deploys", "relevant": ["a7c695995ccf304c"]}
+{"query_id": "q_15bd929156baa6b8", "query": "Safekeeper timeline scheduling", "relevant": ["15bd929156baa6b8"]}
+{"query_id": "q_790c11fd9807cc42", "query": "Managing Tenant and Timeline lifecycles", "relevant": ["790c11fd9807cc42"]}
+{"query_id": "q_5816ac7bcd188bb2", "query": "Summary", "relevant": ["5816ac7bcd188bb2"]}
+{"query_id": "q_8b858e7a73082622", "query": "Motivation", "relevant": ["8b858e7a73082622"]}
+{"query_id": "q_202a79ae5a153001", "query": "Non Goals", "relevant": ["202a79ae5a153001"]}
+{"query_id": "q_dd337b5d6eff6204", "query": "Impacted components (e.g. pageserver, safekeeper, console, etc)", "relevant": ["dd337b5d6eff6204"]}
+{"query_id": "q_195e96471556d931", "query": "Current situation", "relevant": ["195e96471556d931"]}
+{"query_id": "q_1ac9a2b72c791e62", "query": "Proposed implementation", "relevant": ["1ac9a2b72c791e62"]}
+{"query_id": "q_d7a54007da16bef6", "query": "Storage Feature Flags", "relevant": ["d7a54007da16bef6"]}
+{"query_id": "q_255c495a33b00d1a", "query": "PostHog as Feature Flag Service", "relevant": ["255c495a33b00d1a"]}
+{"query_id": "q_33c6811f371248d3", "query": "Define User Profiles", "relevant": ["33c6811f371248d3"]}
+{"query_id": "q_7feee2dfd4200437", "query": "Define Feature Flags", "relevant": ["7feee2dfd4200437"]}
+{"query_id": "q_2972ebd1c68c24bb", "query": "Option 1: HTTP Evaluation Mode", "relevant": ["2972ebd1c68c24bb"]}
+{"query_id": "q_a30895279d0ff97c", "query": "Option 2: Local Evaluation Mode When using PostHog's HTTP evaluation mode, the client (usually the server in a brows", "relevant": ["a30895279d0ff97c"]}
+{"query_id": "q_18f6931423a4476e", "query": "this when the flag gets changed compared with the last cached state in memory. That would be at least 4X (assume we do d", "relevant": ["18f6931423a4476e"]}
+{"query_id": "q_163b88f276ddff37", "query": "Our Solution", "relevant": ["163b88f276ddff37"]}
+{"query_id": "q_57c142968b6cae21", "query": "Implementation", "relevant": ["57c142968b6cae21"]}
+{"query_id": "q_82f3023bd8fede48", "query": "Difference from Tenant Config", "relevant": ["82f3023bd8fede48"]}
+{"query_id": "q_eff9f7b1fae07173", "query": "Final Implementation", "relevant": ["eff9f7b1fae07173"]}
+{"query_id": "q_e65c0637c5bfae97", "query": "Future Works", "relevant": ["e65c0637c5bfae97"]}
+{"query_id": "q_3c3df39d1d331349", "query": "Neon RFCs", "relevant": ["3c3df39d1d331349"]}
+{"query_id": "q_d70e63e70aae71c2", "query": "Overview", "relevant": ["d70e63e70aae71c2"]}
+{"query_id": "q_b8f865432e01da8c", "query": "What", "relevant": ["b8f865432e01da8c"]}
+{"query_id": "q_67843ba310813f3f", "query": "Why", "relevant": ["67843ba310813f3f"]}
+{"query_id": "q_19faa9bd1e0a09ba", "query": "Prior art", "relevant": ["19faa9bd1e0a09ba"]}
+{"query_id": "q_3142ddfed3464bbc", "query": "How", "relevant": ["3142ddfed3464bbc"]}
+{"query_id": "q_687f643291c55c91", "query": "RFC template", "relevant": ["687f643291c55c91"]}
+{"query_id": "q_b66c2bfe7d422686", "query": "Sharding Phase 1: Static Key-space Sharding", "relevant": ["b66c2bfe7d422686"]}
+{"query_id": "q_dfca588f6a4fc655", "query": "Summary", "relevant": ["dfca588f6a4fc655"]}
+{"query_id": "q_3feda8091822e245", "query": "Motivation", "relevant": ["3feda8091822e245"]}
+{"query_id": "q_807cee0c9c7c266d", "query": "Prior art", "relevant": ["807cee0c9c7c266d"]}
+{"query_id": "q_f0dd7e4cf008dd78", "query": "Requirements", "relevant": ["f0dd7e4cf008dd78"]}
+{"query_id": "q_4b485c8683830d74", "query": "Non Goals", "relevant": ["4b485c8683830d74"]}
+{"query_id": "q_77097440c0ed4d94", "query": "Impacted Components", "relevant": ["77097440c0ed4d94"]}
+{"query_id": "q_cb6fb5d83e0ed452", "query": "Terminology", "relevant": ["cb6fb5d83e0ed452"]}
+{"query_id": "q_fa5a75476198400c", "query": "Implementation", "relevant": ["fa5a75476198400c"]}
+{"query_id": "q_a93ca2c10e997fd1", "query": "Key sharding vs. LSN sharding", "relevant": ["a93ca2c10e997fd1"]}
+{"query_id": "q_effb8cf11bc9c71c", "query": "Key mapping scheme", "relevant": ["effb8cf11bc9c71c"]}
+{"query_id": "q_03955806982f113c", "query": "Key -> Shard mapping", "relevant": ["03955806982f113c"]}
+{"query_id": "q_4260070572e7dace", "query": "Data placement examples", "relevant": ["4260070572e7dace"]}
+{"query_id": "q_a19b84f7a75821b3", "query": "Important Types", "relevant": ["a19b84f7a75821b3"]}
+{"query_id": "q_bbde159a51c8847d", "query": "Pageserver changes #### Structural Everywhere the Pageserver currently deals with Tenants, it will move to dealing w", "relevant": ["bbde159a51c8847d"]}
+{"query_id": "q_9d9c6c9a28d61310", "query": "to enable shards to reference layers written by other shards (specifically the parent shard during a split), so that sha", "relevant": ["9d9c6c9a28d61310"]}
+{"query_id": "q_2ebf3aacd804b357", "query": "Compute Endpoints", "relevant": ["2ebf3aacd804b357"]}
+{"query_id": "q_c82f7f66c7d51166", "query": "Control Plane", "relevant": ["c82f7f66c7d51166"]}
+{"query_id": "q_046a46c9369cb0d0", "query": "Future Phases", "relevant": ["046a46c9369cb0d0"]}
+{"query_id": "q_a5a3743f25b8ef17", "query": "Phase 2a: WAL fan-out", "relevant": ["a5a3743f25b8ef17"]}
+{"query_id": "q_aee9f702237caa83", "query": "Phase 2b: Shard Splitting", "relevant": ["aee9f702237caa83"]}
+{"query_id": "q_49c9a02e8b1d9089", "query": "Phase N (future): distributed historical reads", "relevant": ["49c9a02e8b1d9089"]}
+{"query_id": "q_22d3460d661199eb", "query": "FAQ/Alternatives", "relevant": ["22d3460d661199eb"]}
+{"query_id": "q_094de48124ec0f96", "query": "Why stripe the data, rather than using contiguous ranges of keyspace for each shard?", "relevant": ["094de48124ec0f96"]}
+{"query_id": "q_9639c7bcb6208b07", "query": "Why not proxy read requests through one pageserver, so that endpoints don't have to change?", "relevant": ["9639c7bcb6208b07"]}
+{"query_id": "q_bda091ff47aad317", "query": "Layer File Spreading: use one pageserver as the owner of a tenant, and have it spread out work on a per-layer basis", "relevant": ["bda091ff47aad317"]}
+{"query_id": "q_a8924d20daef9d94", "query": "Per-Tenant GetPage@LSN Throttling", "relevant": ["a8924d20daef9d94"]}
+{"query_id": "q_9067da0bca2bc6b4", "query": "Summary", "relevant": ["9067da0bca2bc6b4"]}
+{"query_id": "q_563ae30470a3e804", "query": "Background", "relevant": ["563ae30470a3e804"]}
+{"query_id": "q_27bee10adcf96be6", "query": "GetPage@LSN Request Flow", "relevant": ["27bee10adcf96be6"]}
+{"query_id": "q_fec11bb275cdfb43", "query": "GetPage@LSN Access Pattern", "relevant": ["fec11bb275cdfb43"]}
+{"query_id": "q_a66a1dc71d85cd30", "query": "Motivation", "relevant": ["a66a1dc71d85cd30"]}
+{"query_id": "q_79fe0a0e103c7875", "query": "Solution: Throttling GetPage Requests", "relevant": ["79fe0a0e103c7875"]}
+{"query_id": "q_87eb4dca8f84480d", "query": "The Design Space", "relevant": ["87eb4dca8f84480d"]}
+{"query_id": "q_158db87468b16720", "query": "Scope Of This RFC **This RFC proposes introducing a hard GetPage@LSN/second limit per tenant, with the same value app", "relevant": ["158db87468b16720"]}
+{"query_id": "q_e783c77bfffc937d", "query": "overrides - gain experience & lower the limit over time - we stop lowering the limit as soon as this RFC's goal is achie", "relevant": ["e783c77bfffc937d"]}
+{"query_id": "q_24fed08dcf74a868", "query": "Rationale", "relevant": ["24fed08dcf74a868"]}
+{"query_id": "q_a67afb9b8acab88f", "query": "Future Work", "relevant": ["a67afb9b8acab88f"]}
+{"query_id": "q_8c7ebb0a508a5302", "query": "Independent compute release", "relevant": ["8c7ebb0a508a5302"]}
+{"query_id": "q_85a1c28341171336", "query": "Summary", "relevant": ["85a1c28341171336"]}
+{"query_id": "q_035b78e02d8f0e8f", "query": "Motivation", "relevant": ["035b78e02d8f0e8f"]}
+{"query_id": "q_0e8e2885bccc68d6", "query": "Non-goals", "relevant": ["0e8e2885bccc68d6"]}
+{"query_id": "q_47fc8ae6dacdf81a", "query": "Impacted components", "relevant": ["47fc8ae6dacdf81a"]}
+{"query_id": "q_dd68d718b97c8f1a", "query": "Prior art", "relevant": ["dd68d718b97c8f1a"]}
+{"query_id": "q_1f134bbd19ebb0b4", "query": "Proposed implementation", "relevant": ["1f134bbd19ebb0b4"]}
+{"query_id": "q_8c3b5680ab2969cb", "query": "Separate release branch", "relevant": ["8c3b5680ab2969cb"]}
+{"query_id": "q_d505992da75144d7", "query": "Compute config/settings manifest", "relevant": ["d505992da75144d7"]}
+{"query_id": "q_ceeb2023d1d8e67d", "query": "Control plane: releases table", "relevant": ["ceeb2023d1d8e67d"]}
+{"query_id": "q_c54c88e4d7ae9a82", "query": "Control plane: management API", "relevant": ["c54c88e4d7ae9a82"]}
+{"query_id": "q_0a8ae8e5f21bfc73", "query": "Compute->storage compatibility tests", "relevant": ["0a8ae8e5f21bfc73"]}
+{"query_id": "q_1b75ffc8ade5b73d", "query": "Release flow", "relevant": ["1b75ffc8ade5b73d"]}
+{"query_id": "q_38bb937d06eaca18", "query": "Further work", "relevant": ["38bb937d06eaca18"]}
+{"query_id": "q_2ccac095c0fb0d94", "query": "Alternatives", "relevant": ["2ccac095c0fb0d94"]}
+{"query_id": "q_2ad18f20d11b34c8", "query": "Neon storage node \u2014 alternative", "relevant": ["2ad18f20d11b34c8"]}
+{"query_id": "q_a104b90fa78483f6", "query": "**Design considerations**", "relevant": ["a104b90fa78483f6"]}
+{"query_id": "q_07820e3e3e17ed34", "query": "**Summary**", "relevant": ["07820e3e3e17ed34"]}
+{"query_id": "q_72ecd6265c57c7e9", "query": "**Chunk**", "relevant": ["72ecd6265c57c7e9"]}
+{"query_id": "q_eed9a2e7b0fde528", "query": "**Page deletion**", "relevant": ["eed9a2e7b0fde528"]}
+{"query_id": "q_07d1188b7ed0cc06", "query": "**Recovery**", "relevant": ["07d1188b7ed0cc06"]}
+{"query_id": "q_62d8090ac0579404", "query": "**Checkpointing**", "relevant": ["62d8090ac0579404"]}
+{"query_id": "q_bca0b7c5159d1e33", "query": "**Full page writes (torn page protection)**", "relevant": ["bca0b7c5159d1e33"]}
+{"query_id": "q_7448b56a0e4fc5a8", "query": "**Snapshot**", "relevant": ["7448b56a0e4fc5a8"]}
+{"query_id": "q_b23aca35e03ebef1", "query": "**PITR area**", "relevant": ["b23aca35e03ebef1"]}
+{"query_id": "q_d1d969e36b8ddec5", "query": "**Compression**", "relevant": ["d1d969e36b8ddec5"]}
+{"query_id": "q_e7adb25ce43fb487", "query": "**Chunk metadata**", "relevant": ["e7adb25ce43fb487"]}
+{"query_id": "q_f394071913d04d5e", "query": "**Chunk splitting**", "relevant": ["f394071913d04d5e"]}
+{"query_id": "q_a2eb3d75c85cae7a", "query": "Fixed chunks", "relevant": ["a2eb3d75c85cae7a"]}
+{"query_id": "q_57274177b0666abe", "query": "**Chunk lsm internals**", "relevant": ["57274177b0666abe"]}
+{"query_id": "q_22d92344721faa67", "query": "Storage fleet", "relevant": ["22d92344721faa67"]}
+{"query_id": "q_a6765b71e298df36", "query": "**Storage fleet**", "relevant": ["a6765b71e298df36"]}
+{"query_id": "q_2c3e2235e49d02ec", "query": "**Chunk placement strategies**", "relevant": ["2c3e2235e49d02ec"]}
+{"query_id": "q_58f9eff9b6c83a1b", "query": "**Chunk replication**", "relevant": ["58f9eff9b6c83a1b"]}
+{"query_id": "q_d389ea8e89aa3367", "query": "What", "relevant": ["d389ea8e89aa3367"]}
+{"query_id": "q_b6ac917529589225", "query": "Why", "relevant": ["b6ac917529589225"]}
+{"query_id": "q_a4b3925c8e1b2006", "query": "Don't try to find divergence point at all", "relevant": ["a4b3925c8e1b2006"]}
+{"query_id": "q_086d0983d4f4f7ad", "query": "Find divergence point and truncate at it", "relevant": ["086d0983d4f4f7ad"]}
+{"query_id": "q_d2bca70c756aff3d", "query": "Proposal", "relevant": ["d2bca70c756aff3d"]}
+{"query_id": "q_320d2fe9e7f73884", "query": "Misc", "relevant": ["320d2fe9e7f73884"]}
+{"query_id": "q_6f27e605bb79f0a9", "query": "Safekeeper dynamic membership change", "relevant": ["6f27e605bb79f0a9"]}
+{"query_id": "q_4ee5ec3eea939666", "query": "Algorithm", "relevant": ["4ee5ec3eea939666"]}
+{"query_id": "q_45e861d21f8784ea", "query": "Definitions", "relevant": ["45e861d21f8784ea"]}
+{"query_id": "q_b6aa75b3f5a44c10", "query": "Persistently stored data changes", "relevant": ["b6aa75b3f5a44c10"]}
+{"query_id": "q_140cdd297c66de3a", "query": "Compute <-> safekeeper protocol changes", "relevant": ["140cdd297c66de3a"]}
+{"query_id": "q_966f2e7dbcddf60e", "query": "Safekeeper changes", "relevant": ["966f2e7dbcddf60e"]}
+{"query_id": "q_2aba885ca6e50aad", "query": "Compute (walproposer) changes", "relevant": ["2aba885ca6e50aad"]}
+{"query_id": "q_008918b0d2576e7f", "query": "Change algorithm The following algorithm can be executed anywhere having access to configuration", "relevant": ["008918b0d2576e7f"]}
+{"query_id": "q_167fa522979e4c6c", "query": "on the majority of the new set reached `sync_position`. Similarly, on the happy path no waiting is needed because `pull_", "relevant": ["167fa522979e4c6c"]}
+{"query_id": "q_b99ca8191fd4bbd2", "query": "Implementation", "relevant": ["b99ca8191fd4bbd2"]}
+{"query_id": "q_557b3af5a7afd06f", "query": "storage_controller <-> control plane interface and changes", "relevant": ["557b3af5a7afd06f"]}
+{"query_id": "q_67cbc6c9df5e2d5b", "query": "storage_controller implementation If desired, we may continue using current 'load everything on startup and keep", "relevant": ["67cbc6c9df5e2d5b"]}
+{"query_id": "q_1888a100372fb651", "query": "PUT `/control/v1/safekeper/:node_id/scheduling_policy` changes status to e.g. `offline` or `decomissioned`. Initially it", "relevant": ["1888a100372fb651"]}
+{"query_id": "q_2d0b179a5389b700", "query": "the type is defined by timeline state (membership configuration and whether it is deleted) and safekeeper id: we may nee", "relevant": ["2d0b179a5389b700"]}
+{"query_id": "q_0cc6e5178c78ca85", "query": "`safekeeper_timeline_pending_ops` entry + remove `timelines` entry if there is nothing left in `safekeeper_timeline_pend", "relevant": ["0cc6e5178c78ca85"]}
+{"query_id": "q_5558d8d649a50a6e", "query": "on all safekeepers, notify cplane, etc. All operations are idempotent, so we don't need to persist anything in the datab", "relevant": ["5558d8d649a50a6e"]}
+{"query_id": "q_05dbb108c808c4a8", "query": "Testing", "relevant": ["05dbb108c808c4a8"]}
+{"query_id": "q_74a76f95703039ca", "query": "Order of implementation and rollout", "relevant": ["74a76f95703039ca"]}
+{"query_id": "q_49385f3148c4ceb9", "query": "Integration with evicted timelines", "relevant": ["49385f3148c4ceb9"]}
+{"query_id": "q_00530a394f5624b9", "query": "Possible optimizations", "relevant": ["00530a394f5624b9"]}
+{"query_id": "q_fbc2ec745c00c487", "query": "Misc", "relevant": ["fbc2ec745c00c487"]}
+{"query_id": "q_f632bb42e3127900", "query": "CPU and Memory Profiling", "relevant": ["f632bb42e3127900"]}
+{"query_id": "q_ac90c6ff33554d05", "query": "Summary", "relevant": ["ac90c6ff33554d05"]}
+{"query_id": "q_09a567f082ff0898", "query": "Motivation", "relevant": ["09a567f082ff0898"]}
+{"query_id": "q_2212196e7e7544f9", "query": "Non Goals (For Now)", "relevant": ["2212196e7e7544f9"]}
+{"query_id": "q_b4192d547097d133", "query": "Using Profiles", "relevant": ["b4192d547097d133"]}
+{"query_id": "q_1af75e1998e1b5d2", "query": "API Requirements", "relevant": ["1af75e1998e1b5d2"]}
+{"query_id": "q_2ee2b79f975204d6", "query": "Rust Profiling", "relevant": ["2ee2b79f975204d6"]}
+{"query_id": "q_9ac804e338a652a2", "query": "CPU", "relevant": ["9ac804e338a652a2"]}
+{"query_id": "q_1c5a5ea8b1b3949c", "query": "Memory", "relevant": ["1c5a5ea8b1b3949c"]}
+{"query_id": "q_7ee6a93b06713771", "query": "Go Profiling", "relevant": ["7ee6a93b06713771"]}
+{"query_id": "q_f002fbd8f14d780e", "query": "CPU", "relevant": ["f002fbd8f14d780e"]}
+{"query_id": "q_7423be8fe6c0fac4", "query": "Memory", "relevant": ["7423be8fe6c0fac4"]}
+{"query_id": "q_66be297248ec81c8", "query": "C Profiling", "relevant": ["66be297248ec81c8"]}
+{"query_id": "q_b9d3eccf7a0c3b1c", "query": "Grafana Continuous Profiling", "relevant": ["b9d3eccf7a0c3b1c"]}
+{"query_id": "q_92be9f9cee4dfd2c", "query": "Scraping", "relevant": ["92be9f9cee4dfd2c"]}
+{"query_id": "q_1d2e7a9f609a7d68", "query": "Overhead", "relevant": ["1d2e7a9f609a7d68"]}
+{"query_id": "q_9291d768c3a41d4e", "query": "Alternatives Considered", "relevant": ["9291d768c3a41d4e"]}
+{"query_id": "q_0f75314b5b6d3778", "query": "Deleting pageserver part of tenants data from s3", "relevant": ["0f75314b5b6d3778"]}
+{"query_id": "q_7df821aef0412f51", "query": "Motivation", "relevant": ["7df821aef0412f51"]}
+{"query_id": "q_5e7e5e87000b5453", "query": "Summary", "relevant": ["5e7e5e87000b5453"]}
+{"query_id": "q_a335935dcae687e5", "query": "Components", "relevant": ["a335935dcae687e5"]}
+{"query_id": "q_589c2283c48ec3ed", "query": "Requirements", "relevant": ["589c2283c48ec3ed"]}
+{"query_id": "q_e23bc04abb3e1670", "query": "Proposed implementation", "relevant": ["e23bc04abb3e1670"]}
+{"query_id": "q_944f8e4b69920572", "query": "1.  Pageserver owns deletion machinery #### The sequence TLDR; With this approach control plane needs to call delete", "relevant": ["944f8e4b69920572"]}
+{"query_id": "q_23d79afec479632d", "query": "mark exists alt Remote mark exists PS->>PS: create local mark if its missing PS->>PS: delete local files other than dele", "relevant": ["23d79afec479632d"]}
+{"query_id": "q_a996feb194e4b29d", "query": "2. Control plane owns deletion machinery", "relevant": ["a996feb194e4b29d"]}
+{"query_id": "q_04782a45c080d320", "query": "Summary", "relevant": ["04782a45c080d320"]}
+{"query_id": "q_8560db63834e0dd6", "query": "Extra notes", "relevant": ["8560db63834e0dd6"]}
+{"query_id": "q_99024a94d5c1050d", "query": "Decision", "relevant": ["99024a94d5c1050d"]}
+{"query_id": "q_dbd528f5889d966c", "query": "This is a copy from the [original Notion page](https://www.notion.so/neondatabase/Proposal-Pageserver-MVCC-S3-Storage-8a", "relevant": ["dbd528f5889d966c"]}
+{"query_id": "q_789d7a328810207a", "query": "Proposal: Pageserver MVCC S3 Storage", "relevant": ["789d7a328810207a"]}
+{"query_id": "q_82ffffd5fa414eae", "query": "Problem Statement", "relevant": ["82ffffd5fa414eae"]}
+{"query_id": "q_e0a5157dfc1df96a", "query": "High-Level Idea", "relevant": ["e0a5157dfc1df96a"]}
+{"query_id": "q_47d7baec1e125298", "query": "Design", "relevant": ["47d7baec1e125298"]}
+{"query_id": "q_bdcc7b0419cfa50f", "query": "****************************************************Commit grant/reject policy***************************************", "relevant": ["bdcc7b0419cfa50f"]}
+{"query_id": "q_d69acf52df8eb2ed", "query": "********************Visibility********************", "relevant": ["d69acf52df8eb2ed"]}
+{"query_id": "q_5542ed9a0f03371c", "query": "Longevity Of Transactions & Availability", "relevant": ["5542ed9a0f03371c"]}
+{"query_id": "q_0405d1c6f1641782", "query": "**Operations**", "relevant": ["0405d1c6f1641782"]}
+{"query_id": "q_8ce773b6bb7ff3bd", "query": "Rationale For Deadlist.json", "relevant": ["8ce773b6bb7ff3bd"]}
+{"query_id": "q_ade4bc8b5ff00025", "query": "Garbage Collection / Vacuuming After a transaction has reached reject-acknowledged state,  Control Plane initiates a", "relevant": ["ade4bc8b5ff00025"]}
+{"query_id": "q_1418b3e868b32fe2", "query": "for PUTs**: before a txn PUTs an object, it logs to S3, or some other equivalently durable storage, that it\u2019s going to d", "relevant": ["1418b3e868b32fe2"]}
+{"query_id": "q_0f65158ab4a90e6c", "query": "Branches", "relevant": ["0f65158ab4a90e6c"]}
+{"query_id": "q_64278edff00acfa2", "query": "Safekeeper Changes", "relevant": ["64278edff00acfa2"]}
+{"query_id": "q_577ef13f7c4af0f6", "query": "How This Proposal Unlocks Future Features", "relevant": ["577ef13f7c4af0f6"]}
+{"query_id": "q_c2353c781fea60bb", "query": "**Fast, Zero-Toil Failover on Network Partitions or Instance Failure**", "relevant": ["c2353c781fea60bb"]}
+{"query_id": "q_7731ca3a3584e904", "query": "Decommissioning A Pageserver (Dead or Alive-but-Unresponsive)", "relevant": ["7731ca3a3584e904"]}
+{"query_id": "q_abef4746f70d2aba", "query": "Workflow: Zero-Downtime Relocation", "relevant": ["abef4746f70d2aba"]}
+{"query_id": "q_15d029ef228b3818", "query": "Additional Trade-Offs / Remarks Brought Up During Peer Review This proposal was read by and discussed @Stas and @Dmitr", "relevant": ["15d029ef228b3818"]}
+{"query_id": "q_84a172c710ebe2ba", "query": "an OK trade-off to make. 2. There are countless options to avoid / mitigate the load spike. E.g., pro-actively streaming", "relevant": ["84a172c710ebe2ba"]}
+{"query_id": "q_ef539beadf7e9cbf", "query": "Timeline Archival", "relevant": ["ef539beadf7e9cbf"]}
+{"query_id": "q_6e4fe46603207b87", "query": "Summary", "relevant": ["6e4fe46603207b87"]}
+{"query_id": "q_22725cbd4b1ed777", "query": "Motivation", "relevant": ["22725cbd4b1ed777"]}
+{"query_id": "q_4c04f2ceb6d86121", "query": "Prior art", "relevant": ["4c04f2ceb6d86121"]}
+{"query_id": "q_b6bad642e72df2cf", "query": "Requirements", "relevant": ["b6bad642e72df2cf"]}
+{"query_id": "q_59d39ddb0d10264f", "query": "Non Goals", "relevant": ["59d39ddb0d10264f"]}
+{"query_id": "q_aaf4a51069e6c71f", "query": "Impacted Components", "relevant": ["aaf4a51069e6c71f"]}
+{"query_id": "q_325b2d9580fd184d", "query": "Terminology", "relevant": ["325b2d9580fd184d"]}
+{"query_id": "q_b6c1855213355b75", "query": "Implementation", "relevant": ["b6c1855213355b75"]}
+{"query_id": "q_9b846213208460c3", "query": "High level flow", "relevant": ["9b846213208460c3"]}
+{"query_id": "q_ffbbb29ef10c4068", "query": "Storage format changes", "relevant": ["ffbbb29ef10c4068"]}
+{"query_id": "q_3e8a39f510ce90b1", "query": "API & Timeline state", "relevant": ["3e8a39f510ce90b1"]}
+{"query_id": "q_0ecacbdb3c64fc0e", "query": "Tenant attach changes", "relevant": ["0ecacbdb3c64fc0e"]}
+{"query_id": "q_71f8ef7b8d85b3f8", "query": "Warm-up API", "relevant": ["71f8ef7b8d85b3f8"]}
+{"query_id": "q_7559757cbdb708f2", "query": "Background work Archived branches are not subject to normal compaction.   Instead, when the compaction loop encounte", "relevant": ["7559757cbdb708f2"]}
+{"query_id": "q_4622f06433e20bc5", "query": "into image layers at a single LSN may be thought of as *flattening* the branch, such that it is now a one-dimensional ke", "relevant": ["4622f06433e20bc5"]}
+{"query_id": "q_ce5cfff47d8825d4", "query": "Consumption metrics", "relevant": ["ce5cfff47d8825d4"]}
+{"query_id": "q_44bf8987f58c9f5c", "query": "Secondary locations", "relevant": ["44bf8987f58c9f5c"]}
+{"query_id": "q_16d0e24f3c853063", "query": "Sharding", "relevant": ["16d0e24f3c853063"]}
+{"query_id": "q_9af826157ffb4f20", "query": "Error cases", "relevant": ["9af826157ffb4f20"]}
+{"query_id": "q_876c11e553baa29a", "query": "Errors in sharded tenants", "relevant": ["876c11e553baa29a"]}
+{"query_id": "q_241d40d8a0c961bc", "query": "Archiving/activating", "relevant": ["241d40d8a0c961bc"]}
+{"query_id": "q_08cf0cab4275454d", "query": "Offloading", "relevant": ["08cf0cab4275454d"]}
+{"query_id": "q_63598b054c5de3b2", "query": "Archive branch optimization", "relevant": ["63598b054c5de3b2"]}
+{"query_id": "q_393649553b69062a", "query": "Optimizations", "relevant": ["393649553b69062a"]}
+{"query_id": "q_fa9483c093b257e5", "query": "Delaying storage optimization if retaining parent layers is cheaper", "relevant": ["fa9483c093b257e5"]}
+{"query_id": "q_93b602364360b65c", "query": "Creating a timeline in archived state (a snapshot)", "relevant": ["93b602364360b65c"]}
+{"query_id": "q_ff335d4b5211f171", "query": "Future Work", "relevant": ["ff335d4b5211f171"]}
+{"query_id": "q_b4035633f1c58be1", "query": "Enabling `fullbackup` dumps from archive branches", "relevant": ["b4035633f1c58be1"]}
+{"query_id": "q_7c3015dbf5bdbbe0", "query": "Tagging layers from archived branches", "relevant": ["7c3015dbf5bdbbe0"]}
+{"query_id": "q_7ce937e27c3bf7b4", "query": "Storing sequences of archive branches as deltas", "relevant": ["7ce937e27c3bf7b4"]}
+{"query_id": "q_8e775921ab1bf728", "query": "FAQ/Alternatives", "relevant": ["8e775921ab1bf728"]}
+{"query_id": "q_f305f2e7c3396bc0", "query": "Store all timelines in the tenant manifest", "relevant": ["f305f2e7c3396bc0"]}
+{"query_id": "q_420f003ef1f75a28", "query": "Automatically archiving/activating timelines without external API calls", "relevant": ["420f003ef1f75a28"]}
+{"query_id": "q_166871630f68fa00", "query": "Make offloaded a state of Timeline", "relevant": ["166871630f68fa00"]}
+{"query_id": "q_94849e89e5242b36", "query": "Compute rolling restart with prewarm", "relevant": ["94849e89e5242b36"]}
+{"query_id": "q_dbe2bd9f4a89065b", "query": "Summary", "relevant": ["dbe2bd9f4a89065b"]}
+{"query_id": "q_d3ff090b60cc9e18", "query": "Motivation", "relevant": ["d3ff090b60cc9e18"]}
+{"query_id": "q_e1f74d682dc0ddc2", "query": "Non Goals", "relevant": ["e1f74d682dc0ddc2"]}
+{"query_id": "q_7e1af74cbfab6aee", "query": "Impacted components", "relevant": ["7e1af74cbfab6aee"]}
+{"query_id": "q_944f063fb54d9a73", "query": "Proposed implementation", "relevant": ["944f063fb54d9a73"]}
+{"query_id": "q_3dcc3a4ac164a392", "query": "compute_ctl spec changes and auto-prewarm", "relevant": ["3dcc3a4ac164a392"]}
+{"query_id": "q_ef146019ee41f31c", "query": "compute_ctl API 1.  `POST /store_lfc_state` -- dump LFC state using Postgres SQL interface and store result in S3.", "relevant": ["ef146019ee41f31c"]}
+{"query_id": "q_7c1690b9439f31e2", "query": "just after the initial rollout of the feature. Skipped, } ``` 5. `POST /promote` -- this is a **blocking** API call to p", "relevant": ["7c1690b9439f31e2"]}
+{"query_id": "q_8006d4d9e9850a71", "query": "Control plane operations", "relevant": ["8006d4d9e9850a71"]}
+{"query_id": "q_3946fe7d3d99a1d8", "query": "Complete rolling restart flow", "relevant": ["3946fe7d3d99a1d8"]}
+{"query_id": "q_bf563535023ef2cb", "query": "Network bandwidth and prewarm speed", "relevant": ["bf563535023ef2cb"]}
+{"query_id": "q_f9ef80adca3486d1", "query": "Reliability, failure modes and corner cases", "relevant": ["f9ef80adca3486d1"]}
+{"query_id": "q_c2cd66618d717bf9", "query": "Security implications", "relevant": ["c2cd66618d717bf9"]}
+{"query_id": "q_d34acd8d2a19ef2b", "query": "Unresolved questions", "relevant": ["d34acd8d2a19ef2b"]}
+{"query_id": "q_a1b9b37c8146eb34", "query": "Alternative implementation", "relevant": ["a1b9b37c8146eb34"]}
+{"query_id": "q_9a6c6e8db0fd9a1e", "query": "Definition of Done", "relevant": ["9a6c6e8db0fd9a1e"]}
+{"query_id": "q_ea90c58916a8f649", "query": "Consumption tracking", "relevant": ["ea90c58916a8f649"]}
+{"query_id": "q_45d4ee2e23545f41", "query": "Goals", "relevant": ["45d4ee2e23545f41"]}
+{"query_id": "q_bb6ebf0b4a15d7bd", "query": "Metrics", "relevant": ["bb6ebf0b4a15d7bd"]}
+{"query_id": "q_a7f515b7738ba141", "query": "Services participating in metrics collection", "relevant": ["a7f515b7738ba141"]}
+{"query_id": "q_34500266bd724541", "query": "Proxy", "relevant": ["34500266bd724541"]}
+{"query_id": "q_3719bc88e2ce8237", "query": "Console", "relevant": ["3719bc88e2ce8237"]}
+{"query_id": "q_dc587aac02b01552", "query": "Pageserver", "relevant": ["dc587aac02b01552"]}
+{"query_id": "q_37aed7eeb0fdb6cd", "query": "Data collection", "relevant": ["37aed7eeb0fdb6cd"]}
+{"query_id": "q_1d2c2fd7a16fa0f6", "query": "Push vs. pull", "relevant": ["1d2c2fd7a16fa0f6"]}
+{"query_id": "q_7344908ea922c65c", "query": "Common bus vs. proxying through the console", "relevant": ["7344908ea922c65c"]}
+{"query_id": "q_5c9d0224b7900b39", "query": "Implementation", "relevant": ["5c9d0224b7900b39"]}
+{"query_id": "q_32751f646624f6a5", "query": "Consumption watchdog", "relevant": ["32751f646624f6a5"]}
+{"query_id": "q_a6859024dfe08818", "query": "Extensibility", "relevant": ["a6859024dfe08818"]}
+{"query_id": "q_9f0b73bc386d1c05", "query": "Naming & schema", "relevant": ["9f0b73bc386d1c05"]}
+{"query_id": "q_8d182c8d7793717a", "query": "Name", "relevant": ["8d182c8d7793717a"]}
+{"query_id": "q_7776655f79345cc7", "query": "Summary", "relevant": ["7776655f79345cc7"]}
+{"query_id": "q_eb27d80f46147ec0", "query": "Motivation", "relevant": ["eb27d80f46147ec0"]}
+{"query_id": "q_b7682a78f619d8ed", "query": "What is a timeline and its data", "relevant": ["b7682a78f619d8ed"]}
+{"query_id": "q_e599423b2a1c0a2d", "query": "How the data is stored We have multiple places where timeline data is stored: - `tenant_mgr` [holds](https://github.", "relevant": ["e599423b2a1c0a2d"]}
+{"query_id": "q_9d095e6caccbefb2", "query": "for them. [`tokio::sync::Mutex`](https://docs.rs/tokio/1.19.2/tokio/sync/struct.Mutex.html#method.blocking_lock) and [`t", "relevant": ["9d095e6caccbefb2"]}
+{"query_id": "q_ab544acd87952f53", "query": "How is this data accessed? There are multiple ways the data is accessed, from different sources: 1.  [HTTP requests]", "relevant": ["ab544acd87952f53"]}
+{"query_id": "q_c0d2f8e80107e511", "query": "`import wal` Import the `pg_wal` section of the basebackup archive. - `get_last_record_rlsn`, `get_lsn_by_timestamp` \"Me", "relevant": ["c0d2f8e80107e511"]}
+{"query_id": "q_a99f98f4f21c6cae", "query": "layer file in the local FS and schedules a remote storage sync upload task. During WAL receiving, also updates a separat", "relevant": ["a99f98f4f21c6cae"]}
+{"query_id": "q_77b1ea8dd4871d4a", "query": "Timeline data synchronization", "relevant": ["77b1ea8dd4871d4a"]}
+{"query_id": "q_985d88d2dc4e7185", "query": "Proposed implementation", "relevant": ["985d88d2dc4e7185"]}
+{"query_id": "q_e0470bb08771bcfa", "query": "How to structure timeline data access better - adjust tenant state handling Current [`TenantState`](https://github.c", "relevant": ["e0470bb08771bcfa"]}
+{"query_id": "q_1ab40b7288a20a10", "query": "partially present on the local FS timeline state. To accommodate to that and move away from the redundant status, a time", "relevant": ["1ab40b7288a20a10"]}
+{"query_id": "q_69f3c834b1c883b7", "query": "components, taking multiple locks for that and static state, we can organize the data access and updates in one place. O", "relevant": ["69f3c834b1c883b7"]}
+{"query_id": "q_dccf0de25a5da59e", "query": "Putting it all together If the proposal bullets applied to the diagrams above, the state could be represented as: ![", "relevant": ["dccf0de25a5da59e"]}
+{"query_id": "q_880b1d27431ba9c1", "query": "and written from various data sources. Flushing the frozen layer requires creating a new layer on disk and further remot", "relevant": ["880b1d27431ba9c1"]}
+{"query_id": "q_903276a4b310ec1e", "query": "Node deletion API improvement", "relevant": ["903276a4b310ec1e"]}
+{"query_id": "q_fdd704663ca14b68", "query": "Summary", "relevant": ["fdd704663ca14b68"]}
+{"query_id": "q_36fbbe57d9030eeb", "query": "Motivation", "relevant": ["36fbbe57d9030eeb"]}
+{"query_id": "q_4178e2b54e9533f9", "query": "Impacted components (e.g. pageserver, safekeeper, console, etc)", "relevant": ["4178e2b54e9533f9"]}
+{"query_id": "q_54108de571f7ebd9", "query": "Proposed implementation", "relevant": ["54108de571f7ebd9"]}
+{"query_id": "q_64b4608af96c8849", "query": "Tombstones", "relevant": ["64b4608af96c8849"]}
+{"query_id": "q_d5b27aef85d32f2a", "query": "Gracefulness The problem of making node deletion graceful is complex and involves several challenges: - **Cancellabl", "relevant": ["d5b27aef85d32f2a"]}
+{"query_id": "q_6d5ccaa3c463f330", "query": "`Pause`. The policy will only transition back to `Deleting` when the deletion operation is actively started again, as tr", "relevant": ["6d5ccaa3c463f330"]}
+{"query_id": "q_edde2d87dfbb1835", "query": "Reliability, failure modes and corner cases", "relevant": ["edde2d87dfbb1835"]}
+{"query_id": "q_e18f512463ade6e7", "query": "Operations concurrency", "relevant": ["e18f512463ade6e7"]}
+{"query_id": "q_221e2fb9394b72b3", "query": "Definition of Done", "relevant": ["221e2fb9394b72b3"]}
+{"query_id": "q_6e74aa2839316e43", "query": "Bottommost Garbage-Collection Compaction", "relevant": ["6e74aa2839316e43"]}
+{"query_id": "q_480a7fde05c07b86", "query": "Summary", "relevant": ["480a7fde05c07b86"]}
+{"query_id": "q_cdbc193c9ef7aaed", "query": "Motivation", "relevant": ["cdbc193c9ef7aaed"]}
+{"query_id": "q_f4c681a1c3b4e5ab", "query": "Basic Idea", "relevant": ["f4c681a1c3b4e5ab"]}
+{"query_id": "q_15bb83ea9d946d88", "query": "Branches", "relevant": ["15bb83ea9d946d88"]}
+{"query_id": "q_09b6459a161326b8", "query": "Single Timeline w/ Snapshots: handle `retain_lsn`", "relevant": ["09b6459a161326b8"]}
+{"query_id": "q_42c986703c35baf6", "query": "Child Branches with data: pull + partial images", "relevant": ["42c986703c35baf6"]}
+{"query_id": "q_6ee64b4aee807246", "query": "Result", "relevant": ["6ee64b4aee807246"]}
+{"query_id": "q_92931387c71bc10f", "query": "Compaction Trigger The bottom-most compaction can be automatically triggered.  The goal of the trigger is that it shou", "relevant": ["92931387c71bc10f"]}
+{"query_id": "q_8717c48d301cf168", "query": "produces an extra ***D*** bytes of write amplification. This incurs exactly 2x write amplification (by the write of D),", "relevant": ["8717c48d301cf168"]}
+{"query_id": "q_d8c8526136e36711", "query": "Sub-Compactions", "relevant": ["d8c8526136e36711"]}
+{"query_id": "q_d31826aa5e649905", "query": "Implementation The main implementation of gc-compaction is in `compaction.rs`. * `compact_with_gc`: The main loop of g", "relevant": ["d31826aa5e649905"]}
+{"query_id": "q_16749a5832e22e69", "query": "``` curl 'localhost:9898/v1/tenant/:tenant_id/timeline/:timeline_id/compact?enhanced_gc_bottom_most_compaction=true&dry_", "relevant": ["16749a5832e22e69"]}
+{"query_id": "q_de5197d88b2dcf3f", "query": "Next Steps", "relevant": ["de5197d88b2dcf3f"]}
+{"query_id": "q_5fb6653418d4264b", "query": "How it works now", "relevant": ["5fb6653418d4264b"]}
+{"query_id": "q_bad1e07f0dff5fe4", "query": "User-visible timeline history", "relevant": ["bad1e07f0dff5fe4"]}
+{"query_id": "q_bebce1e4da162c41", "query": "Retention policy behind the scenes", "relevant": ["bebce1e4da162c41"]}
+{"query_id": "q_2e1c74d270a460b0", "query": "Base images and WAL slices", "relevant": ["2e1c74d270a460b0"]}
+{"query_id": "q_285ee9224a8e5f1b", "query": "Branching", "relevant": ["285ee9224a8e5f1b"]}
+{"query_id": "q_8f35fc420008cb2c", "query": "Push and pull between pageservers", "relevant": ["8f35fc420008cb2c"]}
+{"query_id": "q_7ee58a3585cadeb3", "query": "Origin management", "relevant": ["7ee58a3585cadeb3"]}
+{"query_id": "q_5842a36454111612", "query": "Push", "relevant": ["5842a36454111612"]}
+{"query_id": "q_d9055d95ceecdaad", "query": "Pushing branch", "relevant": ["d9055d95ceecdaad"]}
+{"query_id": "q_a250759cdffc3f0a", "query": "Pulling branch", "relevant": ["a250759cdffc3f0a"]}
+{"query_id": "q_9c11dd7f41fc45c2", "query": "AUX file v2", "relevant": ["9c11dd7f41fc45c2"]}
+{"query_id": "q_a9e43cb8b8f5150b", "query": "Summary", "relevant": ["a9e43cb8b8f5150b"]}
+{"query_id": "q_4d95702d41e80e1e", "query": "Motivation", "relevant": ["4d95702d41e80e1e"]}
+{"query_id": "q_29bc4344749569f7", "query": "Prior art", "relevant": ["29bc4344749569f7"]}
+{"query_id": "q_50ced488e55ebf15", "query": "Requirements", "relevant": ["50ced488e55ebf15"]}
+{"query_id": "q_69c29b203e61eb41", "query": "Impacted Components", "relevant": ["69c29b203e61eb41"]}
+{"query_id": "q_81c167f9dc69de99", "query": "Sparse Keyspace", "relevant": ["81c167f9dc69de99"]}
+{"query_id": "q_d2e30dd401d0a8b1", "query": "AUX v2 Keyspace and Key Mapping", "relevant": ["d2e30dd401d0a8b1"]}
+{"query_id": "q_cb490441b67b4f57", "query": "Inbound Logical Replication Key Mapping", "relevant": ["cb490441b67b4f57"]}
+{"query_id": "q_a824ad699ee7ff4e", "query": "Sparse Keyspace Read Path", "relevant": ["a824ad699ee7ff4e"]}
+{"query_id": "q_af4a678e32c2f3f8", "query": "Compaction and Image Layer Generation", "relevant": ["af4a678e32c2f3f8"]}
+{"query_id": "q_b6a4a870c65bc6b9", "query": "Migration", "relevant": ["b6a4a870c65bc6b9"]}
+{"query_id": "q_a80fb4370c5730d7", "query": "Name", "relevant": ["a80fb4370c5730d7"]}
+{"query_id": "q_d860d332879b5bf4", "query": "Summary", "relevant": ["d860d332879b5bf4"]}
+{"query_id": "q_3e1abc213f5ffcf3", "query": "Motivation", "relevant": ["3e1abc213f5ffcf3"]}
+{"query_id": "q_2e9b477f427c119d", "query": "Non Goals (if relevant)", "relevant": ["2e9b477f427c119d"]}
+{"query_id": "q_07f945441637b037", "query": "Impacted components (e.g. pageserver, safekeeper, console, etc)", "relevant": ["07f945441637b037"]}
+{"query_id": "q_cf6900cb8f419f73", "query": "Proposed implementation", "relevant": ["cf6900cb8f419f73"]}
+{"query_id": "q_5883e080511f0099", "query": "Reliability, failure modes and corner cases (if relevant)", "relevant": ["5883e080511f0099"]}
+{"query_id": "q_1e86fbc8cb291362", "query": "Interaction/Sequence diagram (if relevant)", "relevant": ["1e86fbc8cb291362"]}
+{"query_id": "q_2b50288116ae6b3f", "query": "Scalability (if relevant)", "relevant": ["2b50288116ae6b3f"]}
+{"query_id": "q_7854f0df99f71d29", "query": "Security implications (if relevant)", "relevant": ["7854f0df99f71d29"]}
+{"query_id": "q_82ffd17ab2a2581b", "query": "Unresolved questions (if relevant)", "relevant": ["82ffd17ab2a2581b"]}
+{"query_id": "q_f33c8d2bad65a550", "query": "Alternative implementation (if relevant)", "relevant": ["f33c8d2bad65a550"]}
+{"query_id": "q_7f6b487e1c91e429", "query": "Pros/cons of proposed approaches (if relevant)", "relevant": ["7f6b487e1c91e429"]}
+{"query_id": "q_c60bc401942287ec", "query": "Definition of Done (if relevant)", "relevant": ["c60bc401942287ec"]}
+{"query_id": "q_57b5e61884c95651", "query": "Storage messaging", "relevant": ["57b5e61884c95651"]}
+{"query_id": "q_cfed9851fdf4ce8b", "query": "Background What we have currently is very close to etcd variant described in", "relevant": ["cfed9851fdf4ce8b"]}
+{"query_id": "q_11c1e3b91a2e3ea9", "query": "hard). Such elections bear some risk of several offloaders running concurrently for a short period of time, but that's h", "relevant": ["11c1e3b91a2e3ea9"]}
+{"query_id": "q_a47069964ebc141f", "query": "gRPC broker", "relevant": ["a47069964ebc141f"]}
+{"query_id": "q_0d7daff76a6c8797", "query": "Fault tolerance", "relevant": ["0d7daff76a6c8797"]}
+{"query_id": "q_9ca6149dad79433d", "query": "Security implications", "relevant": ["9ca6149dad79433d"]}
+{"query_id": "q_38e42fd26b07391f", "query": "Alternative: get existing pub-sub", "relevant": ["38e42fd26b07391f"]}
+{"query_id": "q_4f4f2a1bbd255f90", "query": "Alternative: direct communication", "relevant": ["4f4f2a1bbd255f90"]}
+{"query_id": "q_4d10a634359dd0db", "query": "Name", "relevant": ["4d10a634359dd0db"]}
+{"query_id": "q_7579f664b713ebea", "query": "Summary", "relevant": ["7579f664b713ebea"]}
+{"query_id": "q_550f62f4b1609b8a", "query": "Motivation", "relevant": ["550f62f4b1609b8a"]}
+{"query_id": "q_ebd1daf68babeb29", "query": "Use cases", "relevant": ["ebd1daf68babeb29"]}
+{"query_id": "q_98b5f7fb6e5b6dad", "query": "Design", "relevant": ["98b5f7fb6e5b6dad"]}
+{"query_id": "q_dce615935cb21667", "query": "Design constraints", "relevant": ["dce615935cb21667"]}
+{"query_id": "q_d3c30001aca2dff2", "query": "API endpoint changes", "relevant": ["d3c30001aca2dff2"]}
+{"query_id": "q_d9196e884d4bb857", "query": "Higher level features", "relevant": ["d9196e884d4bb857"]}
+{"query_id": "q_7af32e5858082e93", "query": "Non Goals", "relevant": ["7af32e5858082e93"]}
+{"query_id": "q_acedaec6797e5ef8", "query": "Corrupt WAL", "relevant": ["acedaec6797e5ef8"]}
+{"query_id": "q_d32fa62139e4e144", "query": "Impacted components (e.g. pageserver, safekeeper, console, etc)", "relevant": ["d32fa62139e4e144"]}
+{"query_id": "q_c0e9d946d2230f90", "query": "Proposed implementation", "relevant": ["c0e9d946d2230f90"]}
+{"query_id": "q_b012941404d5bd5e", "query": "Scalability", "relevant": ["b012941404d5bd5e"]}
+{"query_id": "q_02600469219eeddd", "query": "Implementation by component", "relevant": ["02600469219eeddd"]}
+{"query_id": "q_f89c6e62b23e1c8e", "query": "Unresolved questions", "relevant": ["f89c6e62b23e1c8e"]}
+{"query_id": "q_97f0d6fdca633110", "query": "Graceful Restarts of Storage Controller Managed Clusters", "relevant": ["97f0d6fdca633110"]}
+{"query_id": "q_5f46c181e4558dd0", "query": "Summary", "relevant": ["5f46c181e4558dd0"]}
+{"query_id": "q_d9a684ce9c11a7f9", "query": "Motivation", "relevant": ["d9a684ce9c11a7f9"]}
+{"query_id": "q_53ff2afd0fa45b71", "query": "Requirements", "relevant": ["53ff2afd0fa45b71"]}
+{"query_id": "q_307ad0d8d98b7175", "query": "Non Goals", "relevant": ["307ad0d8d98b7175"]}
+{"query_id": "q_b475d00ee80877e0", "query": "Impacted Components", "relevant": ["b475d00ee80877e0"]}
+{"query_id": "q_17164d7181942432", "query": "Terminology", "relevant": ["17164d7181942432"]}
+{"query_id": "q_5e45af4b1186904e", "query": "Background", "relevant": ["5e45af4b1186904e"]}
+{"query_id": "q_b7ae5b5e59d77cb0", "query": "Storage Controller Basics (skip if already familiar)", "relevant": ["b7ae5b5e59d77cb0"]}
+{"query_id": "q_b713171f505759b2", "query": "Background Optimizations", "relevant": ["b713171f505759b2"]}
+{"query_id": "q_995ed83b3e7e0016", "query": "Reconciliations Concurrency Limiting", "relevant": ["995ed83b3e7e0016"]}
+{"query_id": "q_f3c2a04e317a95ac", "query": "Implementation", "relevant": ["f3c2a04e317a95ac"]}
+{"query_id": "q_0e2b36aad5676d28", "query": "Overall Flow", "relevant": ["0e2b36aad5676d28"]}
+{"query_id": "q_b2b6a87576f6732b", "query": "Node Scheduling Policy State Machine", "relevant": ["b2b6a87576f6732b"]}
+{"query_id": "q_904a7ebeb8710a8a", "query": "Draining/Filling APIs", "relevant": ["904a7ebeb8710a8a"]}
+{"query_id": "q_7c4cb24a2aa23723", "query": "Drain Process", "relevant": ["7c4cb24a2aa23723"]}
+{"query_id": "q_8d66df29288c84c7", "query": "Fill Process", "relevant": ["8d66df29288c84c7"]}
+{"query_id": "q_14dfd96551b0c927", "query": "Failure Modes & Handling", "relevant": ["14dfd96551b0c927"]}
+{"query_id": "q_e7951b90ffd6fcc6", "query": "Optimizations", "relevant": ["e7951b90ffd6fcc6"]}
+{"query_id": "q_06db7ec74bbd5b0a", "query": "Location Warmth", "relevant": ["06db7ec74bbd5b0a"]}
+{"query_id": "q_3a6f16e18f3d9a22", "query": "Alternatives Considered", "relevant": ["3a6f16e18f3d9a22"]}
+{"query_id": "q_b5b8dff0ed479d41", "query": "Draining and Filling Purely as Scheduling Constraints", "relevant": ["b5b8dff0ed479d41"]}
+{"query_id": "q_d49bf73c0be2732d", "query": "Proof of Concept", "relevant": ["d49bf73c0be2732d"]}
+{"query_id": "q_6e28b5cda0da844d", "query": "Storage details", "relevant": ["6e28b5cda0da844d"]}
+{"query_id": "q_108c99f581958f81", "query": "Overview", "relevant": ["108c99f581958f81"]}
+{"query_id": "q_1967a5396a7a0143", "query": "MemStore", "relevant": ["1967a5396a7a0143"]}
+{"query_id": "q_1657b9a846d399d2", "query": "PageIndex", "relevant": ["1657b9a846d399d2"]}
+{"query_id": "q_c180865b431d6448", "query": "WalStore", "relevant": ["c180865b431d6448"]}
+{"query_id": "q_a11f5672c601bb06", "query": "PageStore", "relevant": ["a11f5672c601bb06"]}
+{"query_id": "q_a49f83dd435174db", "query": "LocalStore", "relevant": ["a49f83dd435174db"]}
+{"query_id": "q_82a9ab1f7c85772e", "query": "Granularity", "relevant": ["82a9ab1f7c85772e"]}
+{"query_id": "q_478726a51ae8f5be", "query": "Security", "relevant": ["478726a51ae8f5be"]}
+{"query_id": "q_5bc56669a2749777", "query": "Dynamics", "relevant": ["5bc56669a2749777"]}
+{"query_id": "q_bd8c252b65c8b365", "query": "WAL stream handling", "relevant": ["bd8c252b65c8b365"]}
+{"query_id": "q_045f040710daa7e8", "query": "getPage queries", "relevant": ["045f040710daa7e8"]}
+{"query_id": "q_f2edd60f8b234a08", "query": "Starting page server without local data", "relevant": ["f2edd60f8b234a08"]}
+{"query_id": "q_10f8e697a994efec", "query": "Starting page server with local data (aka restart or reboot)", "relevant": ["10f8e697a994efec"]}
+{"query_id": "q_75db0e4d28b26994", "query": "Snapshot creation", "relevant": ["75db0e4d28b26994"]}
+{"query_id": "q_cded60f0a947ff96", "query": "S3 pushdown", "relevant": ["cded60f0a947ff96"]}
+{"query_id": "q_642628919d41d8b4", "query": "Branch creation", "relevant": ["642628919d41d8b4"]}
+{"query_id": "q_07b92d3fe4b74675", "query": "File formats", "relevant": ["07b92d3fe4b74675"]}
+{"query_id": "q_8fd317bb94c1caa7", "query": "Crash-Consistent Layer Map Updates By Leveraging `index_part.json`", "relevant": ["8fd317bb94c1caa7"]}
+{"query_id": "q_facd6367041f25c4", "query": "Summary", "relevant": ["facd6367041f25c4"]}
+{"query_id": "q_d5125a793aff6315", "query": "Motivation", "relevant": ["d5125a793aff6315"]}
+{"query_id": "q_95cbf646bdf0eca1", "query": "Background", "relevant": ["95cbf646bdf0eca1"]}
+{"query_id": "q_761d10fb16903188", "query": "The Problem", "relevant": ["761d10fb16903188"]}
+{"query_id": "q_e7d06f401774b376", "query": "Problem's Implications For Compaction", "relevant": ["e7d06f401774b376"]}
+{"query_id": "q_b47343e83ec023d1", "query": "Design", "relevant": ["b47343e83ec023d1"]}
+{"query_id": "q_9b459ec889e8b5f5", "query": "How This Solves The Problem", "relevant": ["9b459ec889e8b5f5"]}
+{"query_id": "q_eb9d5ec295a3c04c", "query": "Trade-Offs", "relevant": ["eb9d5ec295a3c04c"]}
+{"query_id": "q_38dad0e78c6decf0", "query": "Fundamental", "relevant": ["38dad0e78c6decf0"]}
+{"query_id": "q_479c1393b9c2aa69", "query": "Practical", "relevant": ["479c1393b9c2aa69"]}
+{"query_id": "q_db0165026cb6bcd4", "query": "Side-Effects Of This Design", "relevant": ["db0165026cb6bcd4"]}
+{"query_id": "q_3e4211eda7f177b1", "query": "Limitations", "relevant": ["3e4211eda7f177b1"]}
+{"query_id": "q_ab5995b15fff5472", "query": "Impacted components", "relevant": ["ab5995b15fff5472"]}
+{"query_id": "q_5f85138c9b0f4b00", "query": "Alternatives considered", "relevant": ["5f85138c9b0f4b00"]}
+{"query_id": "q_965436eca0327544", "query": "Alternative 1: WAL", "relevant": ["965436eca0327544"]}
+{"query_id": "q_862ef00d750c2f23", "query": "Alternative 2: Flow Everything Through `index_part.json`", "relevant": ["862ef00d750c2f23"]}
+{"query_id": "q_a4a5a7b4187d9baa", "query": "Alternative 3: Sequence Numbers For Layers", "relevant": ["a4a5a7b4187d9baa"]}
+{"query_id": "q_13ca270bf8fd17e5", "query": "before", "relevant": ["13ca270bf8fd17e5"]}
+{"query_id": "q_1d7b60ee889cc94d", "query": "after", "relevant": ["1d7b60ee889cc94d"]}
+{"query_id": "q_5697dcb14cb8034d", "query": "Related issues", "relevant": ["5697dcb14cb8034d"]}
+{"query_id": "q_658bee54fa4a06d8", "query": "Implementation Plan", "relevant": ["658bee54fa4a06d8"]}
+{"query_id": "q_380ef0319d5ea81a", "query": "While working on export/import commands, I understood that they fit really well into \"snapshot-first design\".", "relevant": ["380ef0319d5ea81a"]}
+{"query_id": "q_58a875d6d933db09", "query": "Safekeeper gossip", "relevant": ["58a875d6d933db09"]}
+{"query_id": "q_47e62d3d9a8dba41", "query": "Motivation", "relevant": ["47e62d3d9a8dba41"]}
+{"query_id": "q_4a6bbda6327384b0", "query": "Summary", "relevant": ["4a6bbda6327384b0"]}
+{"query_id": "q_fb5d86b18f85c59e", "query": "Components", "relevant": ["fb5d86b18f85c59e"]}
+{"query_id": "q_a9ebb96de6995f59", "query": "Proposed implementation", "relevant": ["a9ebb96de6995f59"]}
+{"query_id": "q_57777bd3ee74c6fd", "query": "Corner cases", "relevant": ["57777bd3ee74c6fd"]}
+{"query_id": "q_8960dc96d4a6e14d", "query": "Pros/cons", "relevant": ["8960dc96d4a6e14d"]}
+{"query_id": "q_644f7aa3195f02a7", "query": "Alternative implementation", "relevant": ["644f7aa3195f02a7"]}
+{"query_id": "q_f8a97ab3c4a5519a", "query": "Security implications", "relevant": ["f8a97ab3c4a5519a"]}
+{"query_id": "q_ec56ad6152c372ef", "query": "Scalability implications", "relevant": ["ec56ad6152c372ef"]}
+{"query_id": "q_ad8039fe121fbcbc", "query": "Vectored Timeline Get", "relevant": ["ad8039fe121fbcbc"]}
+{"query_id": "q_1c1db0666a6a0ea4", "query": "Summary", "relevant": ["1c1db0666a6a0ea4"]}
+{"query_id": "q_3c675931af1b29a9", "query": "Motivation", "relevant": ["3c675931af1b29a9"]}
+{"query_id": "q_3d968924e7d79fa7", "query": "Solution", "relevant": ["3d968924e7d79fa7"]}
+{"query_id": "q_60e407df24f94a09", "query": "DoD", "relevant": ["60e407df24f94a09"]}
+{"query_id": "q_6c2125bc7a6351a0", "query": "Performance", "relevant": ["6c2125bc7a6351a0"]}
+{"query_id": "q_01dab8b1876ffbc9", "query": "Implementation", "relevant": ["01dab8b1876ffbc9"]}
+{"query_id": "q_0f3f21d7dbec1366", "query": "Rollout / Feature Flags", "relevant": ["0f3f21d7dbec1366"]}
+{"query_id": "q_5dee18ba84576a5b", "query": "Interaction With Sharding", "relevant": ["5dee18ba84576a5b"]}

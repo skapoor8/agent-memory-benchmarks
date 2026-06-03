@@ -1,0 +1,17 @@
+{
+  "benchmark": "doc-search",
+  "store": "qdrant",
+  "model": "small",
+  "corpus": "fastapi",
+  "ndcg_at_10": 0.39370418681975555,
+  "recall_at_1": 0.29120879120879123,
+  "recall_at_5": 0.44755244755244755,
+  "recall_at_10": 0.5024975024975025,
+  "mrr_at_10": 0.3592488860346003,
+  "latency_p50_ms": 1.629354,
+  "latency_p95_ms": 2.0230680999999993,
+  "latency_p99_ms": 2.43040768,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 2002,
+  "num_docs": 2002
+}

@@ -1,0 +1,17 @@
+{
+  "benchmark": "code-finding",
+  "store": "tantivy",
+  "model": "small",
+  "corpus": "swe-bench-lite",
+  "ndcg_at_10": 0.38491912291876357,
+  "recall_at_1": 0.25666666666666665,
+  "recall_at_5": 0.44333333333333336,
+  "recall_at_10": 0.5133333333333333,
+  "mrr_at_10": 0.3440833333333333,
+  "latency_p50_ms": 0.2382915,
+  "latency_p95_ms": 0.3437351,
+  "latency_p99_ms": 0.5215555899999983,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 300,
+  "num_docs": 215
+}

@@ -1,0 +1,17 @@
+{
+  "benchmark": "doc-search",
+  "store": "sqlite",
+  "model": "small",
+  "corpus": "fastapi",
+  "ndcg_at_10": 0.6242734292934349,
+  "recall_at_1": 0.525974025974026,
+  "recall_at_5": 0.6798201798201798,
+  "recall_at_10": 0.7207792207792207,
+  "mrr_at_10": 0.5933029272314987,
+  "latency_p50_ms": 1.3241255,
+  "latency_p95_ms": 5.274036849999998,
+  "latency_p99_ms": 11.160479490000002,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 2002,
+  "num_docs": 2002
+}

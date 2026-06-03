@@ -1,0 +1,17 @@
+{
+  "benchmark": "code-finding",
+  "store": "sqlite",
+  "model": "small",
+  "corpus": "swe-bench-lite",
+  "ndcg_at_10": 0.3939502235374388,
+  "recall_at_1": 0.2733333333333333,
+  "recall_at_5": 0.44666666666666666,
+  "recall_at_10": 0.5233333333333333,
+  "mrr_at_10": 0.353281746031746,
+  "latency_p50_ms": 0.4629585,
+  "latency_p95_ms": 1.1426771000000002,
+  "latency_p99_ms": 1.3486299999999998,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 300,
+  "num_docs": 215
+}

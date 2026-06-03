@@ -1,0 +1,17 @@
+{
+  "benchmark": "doc-search",
+  "store": "lancedb",
+  "model": "small",
+  "corpus": "fastapi",
+  "ndcg_at_10": 0.5382434757569995,
+  "recall_at_1": 0.39760239760239763,
+  "recall_at_5": 0.6168831168831169,
+  "recall_at_10": 0.6798201798201798,
+  "mrr_at_10": 0.49298142333856615,
+  "latency_p50_ms": 3.9168335,
+  "latency_p95_ms": 4.7868378,
+  "latency_p99_ms": 5.911401910000001,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 2002,
+  "num_docs": 2002
+}

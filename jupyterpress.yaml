@@ -1,0 +1,16 @@
+title: "Agent Memory Benchmarks"
+description: "Retrieval adapter comparison across four agent-memory tasks."
+theme: anthropic
+
+author:
+  name: "Siddharth Kapoor"
+  links:
+    GitHub: "https://github.com/skapoor8"
+    LinkedIn: "https://www.linkedin.com/in/siddharth-kapoor-562254131/"
+    Website: "https://www.cloudvoyant.dev"
+
+repo: "https://github.com/siddharthkapoor/agent-memory-benchmarks"
+source_dir: notebooks
+output_dir: dist/site
+execute: true
+attribution: true

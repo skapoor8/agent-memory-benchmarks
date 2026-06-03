@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ title }}{% if site_title and site_title != title %} — {{ site_title }}{% endif %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="{{ depth }}style.css"/>
+  {% if theme and theme != "anthropic" %}
+  <link rel="stylesheet" href="{{ depth }}themes/{{ theme }}.css">
+  {% endif %}
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a class="wordmark" href="{{ depth }}index.html">
+        {% if logo_svg %}
+        <span class="wordmark-logo">{{ logo_svg }}</span>
+        {% endif %}
+      </a>
+      <ul class="nav-links">
+        <li><a href="{{ depth }}index.html" {% if active == 'overview' %}class="active"{% endif %}>Overview</a></li>
+        <li><a href="{{ depth }}methodology.html" {% if active == 'methodology' %}class="active"{% endif %}>Methodology</a></li>
+        <li class="has-dropdown {% if active == 'benchmarks' %}active{% endif %}">
+          <a href="#" class="dropdown-toggle">Benchmarks</a>
+          <ul class="dropdown">
+            <li><a href="{{ depth }}benchmarks/code-finding.html">Code Finding</a></li>
+            <li><a href="{{ depth }}benchmarks/doc-search.html">Doc Search</a></li>
+            <li><a href="{{ depth }}benchmarks/episodic-memory.html">Episodic Memory</a></li>
+            <li><a href="{{ depth }}benchmarks/skill-search.html">Skill Search</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ depth }}composite-score.html" {% if active == 'composite' %}class="active"{% endif %}>Composite</a></li>
+      </ul>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <div class="page-layout">
+
+      {% if toc %}
+      <aside class="toc-rail">
+        <p class="toc-heading">On this page</p>
+        <ul class="toc-list">
+          {% for item in toc %}
+          <li class="toc-{{ item.level }}"><a href="#{{ item.id }}">{{ item.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </aside>
+      {% endif %}
+
+      <div class="page-hero {% if not toc %}no-toc{% endif %}">
+        <h1>{{ title }}</h1>
+        {% if subtitle %}<p class="subtitle">{{ subtitle }}</p>{% endif %}
+      </div>
+
+      <article class="page-content {% if not toc %}no-toc{% endif %}">
+        {{ body }}
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-title">{{ site_title }}</span>
+      {% if author and author.name %}
+      <div class="footer-author">
+        <span>{{ author.name }}</span>
+        {% for platform, url in author.links.items() %}
+        <a href="{{ url }}" class="author-link" target="_blank" rel="noopener" aria-label="{{ platform }}">
+          {% if platform in author_icons %}
+          <span class="social-icon">{{ author_icons[platform] }}</span>
+          {% elif platform | lower == 'github' %}
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          {% elif platform | lower == 'linkedin' %}
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          {% else %}
+          <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% if attribution %}
+    <div class="footer-attribution-row">
+      <a href="https://github.com/siddharthkapoor/jupyterpress" class="footer-attribution">Built with JupyterPress</a>
+    </div>
+    {% endif %}
+  </footer>
+
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'neutral' });</script>
+
+  <script>
+    // Chart.js global defaults — Anthropic palette
+    Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
+    Chart.defaults.font.size   = 12;
+    Chart.defaults.color       = "#6b6b6b";
+
+    document.querySelectorAll('canvas[data-chart]').forEach(canvas => {
+      const config = JSON.parse(canvas.dataset.chart);
+      new Chart(canvas, config);
+    });
+  </script>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    // Close nav when a leaf link is clicked
+    navLinks.querySelectorAll('a:not(.dropdown-toggle)').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', false);
+      });
+    });
+    // Mobile: tap on Benchmarks toggles sub-list instead of navigating
+    document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', e => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          btn.closest('.has-dropdown').classList.toggle('open');
+        }
+      });
+    });
+    // Close nav on outside tap
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.site-header')) {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', false);
+      }
+    });
+  </script>
+
+  <script>
+    // TOC scroll spy
+    const headings = document.querySelectorAll('article h2, article h3');
+    const tocLinks = document.querySelectorAll('.toc-list a');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          tocLinks.forEach(l => l.classList.remove('active'));
+          const l = document.querySelector(`.toc-list a[href="#${e.target.id}"]`);
+          if (l) l.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    headings.forEach(h => obs.observe(h));
+  </script>
+</body>
+</html>

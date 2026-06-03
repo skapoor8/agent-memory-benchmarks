@@ -1,0 +1,15 @@
+# codevoyant
+.codevoyant/worktrees/
+
+# data + results (keep qrels.jsonl and result JSONs; ignore corpora/embeddings/html)
+data/*/corpus/
+data/*/embeddings/
+results/*.html
+
+# python build/cache
+.venv/
+dist/
+__pycache__/
+*.egg-info/
+.ruff_cache/
+.pytest_cache/

@@ -1,0 +1,17 @@
+{
+  "benchmark": "episodic-memory",
+  "store": "tantivy",
+  "model": "small",
+  "corpus": "neon-adrs",
+  "ndcg_at_10": 0.7001580256015405,
+  "recall_at_1": 0.5466786355475763,
+  "recall_at_5": 0.7881508078994613,
+  "recall_at_10": 0.8563734290843806,
+  "mrr_at_10": 0.6502685873870793,
+  "latency_p50_ms": 0.2034585,
+  "latency_p95_ms": 0.3764291499999997,
+  "latency_p99_ms": 0.4369476699999999,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 1114,
+  "num_docs": 1115
+}

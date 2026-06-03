@@ -1,0 +1,17 @@
+{
+  "benchmark": "episodic-memory",
+  "store": "lancedb",
+  "model": "small",
+  "corpus": "neon-adrs",
+  "ndcg_at_10": 0.6399633743893601,
+  "recall_at_1": 0.4874326750448833,
+  "recall_at_5": 0.7190305206463196,
+  "recall_at_10": 0.803411131059246,
+  "mrr_at_10": 0.5882986378273631,
+  "latency_p50_ms": 3.624354,
+  "latency_p95_ms": 4.51989155,
+  "latency_p99_ms": 6.14013704,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 1114,
+  "num_docs": 1115
+}

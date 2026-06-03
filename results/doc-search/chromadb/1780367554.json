@@ -1,0 +1,17 @@
+{
+  "benchmark": "doc-search",
+  "store": "chromadb",
+  "model": "small",
+  "corpus": "fastapi",
+  "ndcg_at_10": 0.3915992528059669,
+  "recall_at_1": 0.2902097902097902,
+  "recall_at_5": 0.44455544455544455,
+  "recall_at_10": 0.4985014985014985,
+  "mrr_at_10": 0.3577075702075702,
+  "latency_p50_ms": 0.6302289999999999,
+  "latency_p95_ms": 0.9982190999999997,
+  "latency_p99_ms": 1.8092345000000003,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 2002,
+  "num_docs": 2002
+}

@@ -1,0 +1,127 @@
+# =============================================================================
+# mise.toml - uv (Python) template
+# Overlays the base mise.toml during scaffold.
+# =============================================================================
+
+[env]
+PROJECT = "agent-memory-benchmarks"
+# Read version from pyproject.toml [project].version
+VERSION = "{{exec(command='python3 -c \"import tomllib,sys; f=open(\\\"pyproject.toml\\\",\\\"rb\\\"); d=tomllib.load(f); print(d[\\\"project\\\"][\\\"version\\\"])\" 2>/dev/null || echo 0.1.0')}}"
+
+[tools]
+python     = "3.12"
+uv         = "0.7"
+node       = "lts"
+bats       = "latest"
+shellcheck = "latest"
+shfmt      = "latest"
+
+[tasks.install]
+description = "Install Python dependencies"
+run         = "uv sync --all-extras"
+
+[tasks.build]
+description = "Build Python distribution packages"
+depends     = ["install"]
+run         = "uv build"
+
+[tasks.run]
+description = "Run the project"
+depends     = ["install"]
+run         = "uv run python -m agent_memory_benchmarks"
+
+[tasks.bench]
+description = "Run a benchmark: mise run bench -- --benchmark <name> --store <adapter>"
+depends     = ["install"]
+run         = "uv run python -m agent_memory_benchmarks bench $@"
+
+[tasks."bench:fast"]
+description = "Run all benchmarks with all Tier 1 adapters (small model)"
+depends     = ["install"]
+run         = "uv run python -m agent_memory_benchmarks bench --benchmark all --store all --model small"
+
+[tasks.report]
+description = "Generate HTML report from results/"
+depends     = ["install"]
+run         = "uv run python -m agent_memory_benchmarks report $@"
+
+[tasks.test]
+description = "Run pytest test suite"
+depends     = ["install"]
+run         = "uv run pytest"
+
+[tasks.lint]
+description = "Run ruff linter"
+depends     = ["install"]
+run         = "uv run ruff check ."
+
+[tasks.lint-fix]
+description = "Auto-fix ruff lint issues"
+depends     = ["install"]
+run         = "uv run ruff check --fix ."
+
+[tasks.format]
+description = "Format code with ruff"
+depends     = ["install"]
+run         = "uv run ruff format ."
+
+[tasks.format-check]
+description = "Check formatting without modifying files"
+depends     = ["install"]
+run         = "uv run ruff format --check ."
+
+[tasks.publish]
+description = "Publish package to PyPI"
+depends     = ["build"]
+run         = "uv publish"
+
+[tasks.docker-build]
+description = "Build Docker image"
+run         = "COMPOSE_BAKE=true docker compose build"
+
+[tasks.docker-run]
+description = "Run project in Docker"
+run         = "docker compose run --rm runner"
+
+[tasks.docker-test]
+description = "Run tests in Docker"
+run         = "docker compose run --rm tester"
+
+[tasks.clean]
+description = "Remove build artifacts"
+run         = "rm -rf dist/ .ruff_cache/ __pycache__/ .pytest_cache/ src/*.egg-info/ .venv/"
+
+[tasks."report:build"]
+description = "Build the static site to dist/site/ (executes notebooks, then renders HTML)"
+depends     = ["install"]
+run         = "uv run jupyterpress build --config jupyterpress.yaml"
+
+[tasks."report:clean"]
+description = "Remove site build artifacts"
+run         = "rm -rf dist/site/"
+
+[tasks."report:serve"]
+description = "Build and serve the report at http://localhost:8000 with live reload"
+depends     = ["install"]
+run         = "uv run jupyterpress serve --config jupyterpress.yaml"
+
+[tasks."report:publish"]
+description = "Deploy dist/site/ to gh-pages branch via ghp-import"
+depends     = ["report:build"]
+run         = "uv run jupyterpress publish --config jupyterpress.yaml"
+
+[tasks.version]
+description = "Print current version"
+run         = "python3 -c \"import tomllib; f=open('pyproject.toml','rb'); d=tomllib.load(f); print(d['project']['version'])\""
+
+[tasks.version-next]
+description = "Preview next semantic-release version"
+run         = "mise run upversion -- --dry-run"
+
+[tasks.upversion]
+description = "Run semantic-release to version and changelog"
+run         = ".mise-tasks/upversion"
+
+[tasks.publish-rc]
+description = "Publish RC package to TestPyPI for pre-release validation"
+run         = ".mise-tasks/publish-rc"
