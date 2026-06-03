@@ -4,8 +4,10 @@ Task: Given a task description, retrieve the correct API/tool to invoke
       from a corpus of API descriptions.
 
 Corpora:
-  gorilla-apibench: HuggingFace Transformers subset of gorilla-llm/APIBench
-                    (~200-300 unique APIs, ~300 task-instruction queries)
+  gorilla-apibench:            HuggingFace Transformers subset of gorilla-llm/APIBench
+  gorilla-apibench-torchhub:   Torch Hub subset
+  gorilla-apibench-tensorhub:  TensorFlow Hub subset
+  gorilla-apibench-all:        All three subsets merged
 
 GT:  api_call field from gorilla-llm/APIBench maps instruction → api_name
 Metric: nDCG@10, Recall@1
@@ -19,6 +21,21 @@ from ..adapters.base import Document
 from .common import BenchmarkResult, embed_docs, get_model, run_evaluation
 
 DATA_DIR = Path("data/skill-search")
+
+_PROVIDER_MAP: dict[str, str] = {
+    "huggingface": "Hugging Face Transformers",
+    "torchhub": "PyTorch",
+    "tensorhub": "TensorFlow Hub",
+}
+
+# Corpus name → subset key (or "all")
+_CORPUS_MAP: dict[str, str] = {
+    "gorilla-apibench": "huggingface",  # backward-compatible default
+    "gorilla-apibench-huggingface": "huggingface",
+    "gorilla-apibench-torchhub": "torchhub",
+    "gorilla-apibench-tensorhub": "tensorhub",
+    "gorilla-apibench-all": "all",
+}
 
 # 30 realistic tool descriptions used as offline fallback so BM25 gets non-zero scores.
 # Queries use different but overlapping wording so retrieval is non-trivial.
@@ -112,20 +129,31 @@ def _load_from_cache(cache: Path) -> tuple[list[Document], list[dict], dict[str,
     return docs, queries, qrels
 
 
-def download_skillsbench() -> tuple[list[Document], list[dict], dict[str, set[str]]]:
-    """Load gorilla-llm/APIBench (HuggingFace provider subset). Falls back to synthetic if unavailable.
+def download_skillsbench(subset: str = "huggingface") -> tuple[list[Document], list[dict], dict[str, set[str]]]:
+    """Load gorilla-llm/APIBench for a single provider subset. Falls back to synthetic if unavailable.
 
-    Cached to data/skill-search/qrels.jsonl.
+    subset: one of 'huggingface', 'torchhub', 'tensorhub'
+    Cached to data/skill-search/qrels-{subset}.jsonl
     """
+    if subset not in _PROVIDER_MAP:
+        raise ValueError(f"Unknown APIBench subset '{subset}'. Choose from: {list(_PROVIDER_MAP)}")
+
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    cache = DATA_DIR / "qrels.jsonl"
-    if cache.exists():
-        return _load_from_cache(cache)
+
+    # Migrate legacy cache (qrels.jsonl → qrels-huggingface.jsonl)
+    legacy_cache = DATA_DIR / "qrels.jsonl"
+    new_cache = DATA_DIR / f"qrels-{subset}.jsonl"
+    if legacy_cache.exists() and not new_cache.exists() and subset == "huggingface":
+        legacy_cache.rename(new_cache)
+
+    if new_cache.exists():
+        return _load_from_cache(new_cache)
 
     try:
         from datasets import load_dataset
 
         ds = load_dataset("gorilla-llm/APIBench", split="train")
+        provider_name = _PROVIDER_MAP[subset]
 
         skill_texts: dict[str, str] = {}
         queries: list[dict] = []
@@ -133,11 +161,12 @@ def download_skillsbench() -> tuple[list[Document], list[dict], dict[str, set[st
         seen_instructions: set[str] = set()
 
         for row in ds:
-            if row.get("provider") != "Hugging Face Transformers":
+            if row.get("provider") != provider_name:
                 continue
             try:
-                api_data = json.loads(row["api_data"])
-            except (json.JSONDecodeError, KeyError):
+                raw = row["api_data"]
+                api_data = raw if isinstance(raw, dict) else json.loads(raw)
+            except (json.JSONDecodeError, KeyError, TypeError):
                 continue
 
             api_name = api_data.get("api_name", "").strip()
@@ -146,18 +175,12 @@ def download_skillsbench() -> tuple[list[Document], list[dict], dict[str, set[st
             if not api_name or not description:
                 continue
 
-            # Deduplicate corpus by api_name
             if api_name not in skill_texts:
-                if len(skill_texts) >= 300:
-                    continue
                 skill_texts[api_name] = f"{description} {domain}".strip()
 
-            # Extract instruction (before ###Output:)
             code = row.get("code", "")
             instruction = code.split("###Output:")[0].replace("###Instruction:", "").strip()
             if not instruction or instruction in seen_instructions:
-                continue
-            if len(queries) >= 300:
                 continue
 
             seen_instructions.add(instruction)
@@ -168,7 +191,7 @@ def download_skillsbench() -> tuple[list[Document], list[dict], dict[str, set[st
         if not queries or not skill_texts:
             return _synthetic_skillsbench()
 
-        with cache.open("w") as f:
+        with new_cache.open("w") as f:
             for q in queries:
                 api_name = next(iter(qrels[q["id"]]))
                 f.write(
@@ -190,8 +213,41 @@ def download_skillsbench() -> tuple[list[Document], list[dict], dict[str, set[st
         return _synthetic_skillsbench()
 
 
+def _load_all_subsets() -> tuple[list[Document], list[dict], dict[str, set[str]]]:
+    """Load and merge all three APIBench subsets.
+
+    Query IDs are namespaced with subset prefix to avoid collisions:
+    q_huggingface_0, q_torchhub_0, q_tensorhub_0
+    """
+    all_docs: dict[str, str] = {}  # api_name → text (dedup across subsets)
+    all_queries: list[dict] = []
+    all_qrels: dict[str, set[str]] = {}
+
+    for subset in _PROVIDER_MAP:
+        docs, queries, qrels = download_skillsbench(subset=subset)
+        for doc in docs:
+            if doc.id not in all_docs:
+                all_docs[doc.id] = doc.text
+        for q in queries:
+            rel_set = qrels[q["id"]]
+            namespaced_id = f"q_{subset}_{q['id'].lstrip('q_')}"
+            all_queries.append({"id": namespaced_id, "text": q["text"]})
+            all_qrels[namespaced_id] = rel_set
+
+    merged_docs = [Document(id=k, text=v) for k, v in all_docs.items()]
+    return merged_docs, all_queries, all_qrels
+
+
 def run(adapter, corpus: str = "gorilla-apibench", model: str = "small") -> BenchmarkResult:
-    docs, queries, qrels = download_skillsbench()
+    if corpus not in _CORPUS_MAP:
+        raise ValueError(f"Unknown skill-search corpus '{corpus}'. Choose from: {list(_CORPUS_MAP)}")
+
+    subset_key = _CORPUS_MAP[corpus]
+    if subset_key == "all":
+        docs, queries, qrels = _load_all_subsets()
+    else:
+        docs, queries, qrels = download_skillsbench(subset=subset_key)
+
     docs = embed_docs(docs, model)
     model_obj = get_model(model)
     adapter.index(docs)

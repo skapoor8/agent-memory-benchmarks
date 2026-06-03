@@ -1,0 +1,17 @@
+{
+  "benchmark": "nfcorpus",
+  "store": "chromadb",
+  "model": "small",
+  "corpus": "nfcorpus",
+  "ndcg_at_10": 0.31812101246228136,
+  "recall_at_1": 0.042634960538243304,
+  "recall_at_5": 0.1185684001280333,
+  "recall_at_10": 0.15746672110995497,
+  "mrr_at_10": 0.5066354612020246,
+  "latency_p50_ms": 0.78325,
+  "latency_p95_ms": 1.227979399999998,
+  "latency_p99_ms": 2.1975707199999968,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 323,
+  "num_docs": 3633
+}

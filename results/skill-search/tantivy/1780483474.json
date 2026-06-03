@@ -1,0 +1,17 @@
+{
+  "benchmark": "skill-search",
+  "store": "tantivy",
+  "model": "small",
+  "corpus": "gorilla-apibench-tensorhub",
+  "ndcg_at_10": 0.1756613444703546,
+  "recall_at_1": 0.08532643826761474,
+  "recall_at_5": 0.21800258564964448,
+  "recall_at_10": 0.28425985778926954,
+  "mrr_at_10": 0.14202597705748968,
+  "latency_p50_ms": 0.243375,
+  "latency_p95_ms": 0.311708,
+  "latency_p99_ms": 0.52575142,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 6188,
+  "num_docs": 55
+}

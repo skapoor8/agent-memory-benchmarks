@@ -14,6 +14,7 @@ BENCHMARKS = {
     "doc-search": "agent_memory_benchmarks.benchmarks.doc_search",
     "episodic-memory": "agent_memory_benchmarks.benchmarks.episodic_memory",
     "skill-search": "agent_memory_benchmarks.benchmarks.skill_search",
+    "nfcorpus": "agent_memory_benchmarks.benchmarks.nfcorpus",
 }
 
 

@@ -1,0 +1,17 @@
+{
+  "benchmark": "nfcorpus",
+  "store": "lancedb",
+  "model": "small",
+  "corpus": "nfcorpus",
+  "ndcg_at_10": 0.3466119708351884,
+  "recall_at_1": 0.05780675782471767,
+  "recall_at_5": 0.1368361560549449,
+  "recall_at_10": 0.17205618807565684,
+  "mrr_at_10": 0.5494496044031648,
+  "latency_p50_ms": 5.203625,
+  "latency_p95_ms": 6.806421199999999,
+  "latency_p99_ms": 8.274162499999987,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 323,
+  "num_docs": 3633
+}

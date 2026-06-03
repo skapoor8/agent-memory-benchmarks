@@ -1,0 +1,17 @@
+{
+  "benchmark": "skill-search",
+  "store": "chromadb",
+  "model": "small",
+  "corpus": "gorilla-apibench",
+  "ndcg_at_10": 0.3050355467877587,
+  "recall_at_1": 0.16335791264889393,
+  "recall_at_5": 0.36850066175080354,
+  "recall_at_10": 0.47683872187559084,
+  "mrr_at_10": 0.25203844757162963,
+  "latency_p50_ms": 0.453458,
+  "latency_p95_ms": 0.7157831999999997,
+  "latency_p99_ms": 1.174356079999996,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 5289,
+  "num_docs": 585
+}

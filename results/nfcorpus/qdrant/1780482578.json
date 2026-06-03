@@ -1,0 +1,17 @@
+{
+  "benchmark": "nfcorpus",
+  "store": "qdrant",
+  "model": "small",
+  "corpus": "nfcorpus",
+  "ndcg_at_10": 0.31949069326830076,
+  "recall_at_1": 0.04418294815434237,
+  "recall_at_5": 0.12004908393473676,
+  "recall_at_10": 0.15901470872605403,
+  "mrr_at_10": 0.5070531721460514,
+  "latency_p50_ms": 3.326792,
+  "latency_p95_ms": 4.7299586,
+  "latency_p99_ms": 6.237636019999993,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 323,
+  "num_docs": 3633
+}

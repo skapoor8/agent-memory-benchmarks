@@ -1,0 +1,17 @@
+{
+  "benchmark": "nfcorpus",
+  "store": "tantivy",
+  "model": "small",
+  "corpus": "nfcorpus",
+  "ndcg_at_10": 0.30712431801123213,
+  "recall_at_1": 0.05675266544944965,
+  "recall_at_5": 0.11995978296896828,
+  "recall_at_10": 0.14851694543351923,
+  "mrr_at_10": 0.5175856307435255,
+  "latency_p50_ms": 0.263209,
+  "latency_p95_ms": 0.5897916999999997,
+  "latency_p99_ms": 0.9206882599999993,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 323,
+  "num_docs": 3633
+}

@@ -1,0 +1,17 @@
+{
+  "benchmark": "skill-search",
+  "store": "lancedb",
+  "model": "small",
+  "corpus": "gorilla-apibench-all",
+  "ndcg_at_10": 0.2133173033655132,
+  "recall_at_1": 0.1168672739102147,
+  "recall_at_5": 0.2536597267404034,
+  "recall_at_10": 0.3340110605074821,
+  "mrr_at_10": 0.17619802800755957,
+  "latency_p50_ms": 3.9064375,
+  "latency_p95_ms": 5.7801355,
+  "latency_p99_ms": 9.612435399999992,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 12296,
+  "num_docs": 683
+}
