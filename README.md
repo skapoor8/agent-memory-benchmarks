@@ -17,22 +17,22 @@ No Docker, no cloud credentials. The first run downloads corpora and an embeddin
 
 ## What it benchmarks
 
-| Task | Description | Corpus | Ground truth |
-|------|-------------|--------|--------------|
-| **code-finding** | Given a GitHub issue, retrieve the source files most likely to need modification | SWE-bench Lite — 300 Python issues, 215 repos | Gold-patch file paths |
-| **doc-search** | Given a natural-language API question, retrieve the most relevant documentation section | FastAPI docs (~890 section chunks) | InPars-lite synthetic Q&A pairs |
-| **episodic-memory** | Recover past architectural decisions from project ADRs | Neon ADRs — 247 records, 1 114 queries | ADR content |
-| **skill-search** | Route a task description to the correct API or tool | Gorilla APIBench — 300 HuggingFace APIs, 30 queries | APIBench gold labels |
+| Task                | Description                                                                             | Corpus                                              | Ground truth                    |
+| ------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------- |
+| **code-finding**    | Given a GitHub issue, retrieve the source files most likely to need modification        | SWE-bench Lite — 300 Python issues, 215 repos       | Gold-patch file paths           |
+| **doc-search**      | Given a natural-language API question, retrieve the most relevant documentation section | FastAPI docs (~890 section chunks)                  | InPars-lite synthetic Q&A pairs |
+| **episodic-memory** | Recover past architectural decisions from project ADRs                                  | Neon ADRs — 247 records, 1 114 queries              | ADR content                     |
+| **skill-search**    | Route a task description to the correct API or tool                                     | Gorilla APIBench — 300 HuggingFace APIs, 30 queries | APIBench gold labels            |
 
 ## Adapters
 
-| Adapter | `--store` | Search type | Tier |
-|---------|-----------|-------------|------|
-| SQLite FTS5 | `sqlite` | BM25 keyword | 1 |
-| LanceDB | `lancedb` | Dense vector (HNSW) | 1 |
-| ChromaDB | `chromadb` | Dense vector | 1 |
-| Tantivy | `tantivy` | BM25 keyword | 1 |
-| Qdrant | `qdrant` | Dense vector (HNSW) | 1 |
+| Adapter     | `--store`  | Search type         | Tier |
+| ----------- | ---------- | ------------------- | ---- |
+| SQLite FTS5 | `sqlite`   | BM25 keyword        | 1    |
+| LanceDB     | `lancedb`  | Dense vector (HNSW) | 1    |
+| ChromaDB    | `chromadb` | Dense vector        | 1    |
+| Tantivy     | `tantivy`  | BM25 keyword        | 1    |
+| Qdrant      | `qdrant`   | Dense vector (HNSW) | 1    |
 
 All adapters run fully embedded — no infrastructure required. Qdrant runs `:memory:` by default; set `QDRANT_URL` to target a server.
 
@@ -57,7 +57,7 @@ Results land in `results/<benchmark>/<store>/<timestamp>.json`:
 {
   "benchmark": "episodic-memory",
   "store": "lancedb",
-  "ndcg_at_10": 0.640,
+  "ndcg_at_10": 0.64,
   "recall_at_1": 0.487,
   "recall_at_5": 0.719,
   "recall_at_10": 0.803,
@@ -82,26 +82,26 @@ mise run report:clean    # remove dist/site/
 
 ### Report pages
 
-| Page | Description |
-|------|-------------|
-| **Overview** | Results summary and key findings |
-| **Methodology** | Evaluation protocol, metrics (nDCG, Recall@k, MRR), BM25/HNSW/SBERT algorithm deep-dives with visualizations |
-| **Code Finding** | SWE-bench task flow, corpus stats, background on why dense search leads |
-| **Doc Search** | FastAPI chunking pipeline, InPars ground truth, BM25 vs dense tradeoff |
-| **Episodic Memory** | ADR retrieval flow, Neon corpus topic distribution, why BM25 wins on domain vocabulary |
-| **Skill Search** | Tool routing flow, semantic gap illustration, Gorilla/APIBench background |
-| **Composite** | Radar charts (per-adapter profiles), cross-benchmark heatmap, speed-accuracy scatter |
+| Page                | Description                                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Overview**        | Results summary and key findings                                                                             |
+| **Methodology**     | Evaluation protocol, metrics (nDCG, Recall@k, MRR), BM25/HNSW/SBERT algorithm deep-dives with visualizations |
+| **Code Finding**    | SWE-bench task flow, corpus stats, background on why dense search leads                                      |
+| **Doc Search**      | FastAPI chunking pipeline, InPars ground truth, BM25 vs dense tradeoff                                       |
+| **Episodic Memory** | ADR retrieval flow, Neon corpus topic distribution, why BM25 wins on domain vocabulary                       |
+| **Skill Search**    | Tool routing flow, semantic gap illustration, Gorilla/APIBench background                                    |
+| **Composite**       | Radar charts (per-adapter profiles), cross-benchmark heatmap, speed-accuracy scatter                         |
 
 ### Site configuration (`jupyterpress.yaml`)
 
 ```yaml
 title: "Agent Memory Benchmarks"
-theme: anthropic          # anthropic | openai | grok | mistral | perplexity | cohere | reflection
+theme: anthropic # anthropic | openai | grok | mistral | perplexity | cohere | reflection
 author:
   name: "..."
   links:
     GitHub: "https://..."
-execute: true             # re-execute notebooks at build time
+execute: true # re-execute notebooks at build time
 source_dir: notebooks
 output_dir: dist/site
 ```
@@ -140,6 +140,18 @@ src/
 results/                      # benchmark output JSON (gitignored if large)
 data/                         # cached corpus data
 ```
+
+## TODO
+
+- Expand to more meaningful benchmarks relevant to:
+  - Code finding
+  - Text finding in large knowledge bases
+  - Skill search
+  - Episodic memory / fact finding
+- Get better datasets
+- Run benchmarks on larger datasets
+- Expand tools and techniques considered for benchmarking
+- Evaluate whether adapters give tools the best chance to succeed at a particular benchmark
 
 ## Contributing
 
