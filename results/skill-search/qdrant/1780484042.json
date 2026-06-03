@@ -1,0 +1,17 @@
+{
+  "benchmark": "skill-search",
+  "store": "qdrant",
+  "model": "small",
+  "corpus": "gorilla-apibench",
+  "ndcg_at_10": 0.30399409410312217,
+  "recall_at_1": 0.1614671960673095,
+  "recall_at_5": 0.36850066175080354,
+  "recall_at_10": 0.47683872187559084,
+  "mrr_at_10": 0.25067825705942554,
+  "latency_p50_ms": 0.610833,
+  "latency_p95_ms": 0.8274919999999992,
+  "latency_p99_ms": 1.408691079999998,
+  "index_throughput_docs_per_sec": 0.0,
+  "num_queries": 5289,
+  "num_docs": 585
+}
